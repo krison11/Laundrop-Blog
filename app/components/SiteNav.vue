@@ -218,7 +218,12 @@ import { Component } from "vue-property-decorator";
 import { Fragment } from "vue-fragment";
 
 @Component({
-  components: { Fragment }
+  components: { Fragment },
+  head() {
+    return {
+      script: [{ src: "https://code.iconify.design/1/1.0.6/iconify.min.js" }],
+    };
+  },
 })
 export default class SiteNav extends Vue {
   show: boolean = false;
