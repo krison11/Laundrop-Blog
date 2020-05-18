@@ -1,0 +1,206 @@
+# Backend https://www.netlifycms.org/docs/configuration-options/#backend
+backend:
+  name: git-gateway
+  branch: master
+
+# Publish mode https://www.netlifycms.org/docs/configuration-options/#publish-mode
+publish_mode: editorial_workflow
+
+# Media and Public Folders https://www.netlifycms.org/docs/configuration-options/#media-and-public-folders
+media_folder: 'app/static/images/uploads' # Media files will be stored in the repo under images/uploads
+public_folder: '/images/uploads'
+
+# Collections https://www.netlifycms.org/docs/configuration-options/#collections
+collections:
+  - label: Seo Landing Page Meta Info
+    name: seoLandingPage
+    files:
+      - label: Meta Info
+        name: meta
+        format: json
+        file: 'app/content/metaContent/meta.json'
+        fields:
+          - { label: 'Seo Title', name: 'seoTitle', widget: 'string' }
+          - {
+              label: 'SEO Description',
+              name: 'seoDescription',
+              widget: 'text',
+              required: false,
+            }
+          - {
+              label: 'SEO Website Name',
+              name: 'seoWebsiteName',
+              widget: 'string',
+              required: false,
+            }
+          - {
+              label: 'SEO Website URL',
+              name: 'seoWebsiteUrl',
+              widget: 'string',
+              required: false,
+            }
+          - { label: 'Seo Meta Image', name: 'seoMetaImage', widget: 'image' }
+          - {
+              label: 'SEO Type',
+              name: 'seoType',
+              widget: 'string',
+              required: false,
+            }
+          - {
+              label: 'SEO Language',
+              name: 'seoLanguage',
+              widget: 'string',
+              required: false,
+            }
+
+  - name: 'blog'
+    label: 'Blog'
+    format: 'json'
+    folder: 'app/content/blog'
+    create: true
+    slug: '{{slug}}'
+    sort: 'published_date:desc'
+    fields:
+      - {
+          label: 'Post Title',
+          name: 'title',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Excerpt',
+          name: 'excerpt',
+          widget: 'text',
+          required: false,
+        }
+      - { label: 'Post Image', name: 'image', widget: 'image', required: false }
+      - {
+          label: 'Page Header Image',
+          name: 'P_headerImg',
+          widget: 'image',
+          required: false,
+        }
+      - {
+          label: 'Page Header Text On Image',
+          name: 'P_headerImgText',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Page Author Image',
+          name: 'P_authorImg',
+          widget: 'image',
+          required: false,
+        }
+      - {
+          label: 'Page Author Title',
+          name: 'P_authorTitle',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Page Author Name',
+          name: 'P_authorName',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Published Date',
+          name: 'publishedDate',
+          widget: 'date',
+          format: 'Do MMM YYYY',
+          required: false,
+        }
+      - {
+          label: 'Page Markdown Title 1',
+          name: 'P_markdownTitle1',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Page Markdown 1',
+          name: 'P_markdown1',
+          widget: 'markdown',
+          required: false,
+        }
+      - {
+          label: 'Page Content Image',
+          name: 'P_ContentImg',
+          widget: 'image',
+          required: false,
+        }
+      - {
+          label: 'Page Content Text On Image',
+          name: 'P_ContentImgText',
+          widget: 'text',
+          required: false,
+        }
+      - {
+          label: 'Page Markdown Title 2',
+          name: 'P_markdownTitle2',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Page Markdown 2',
+          name: 'P_markdown2',
+          widget: 'markdown',
+          required: false,
+        }
+      - {
+          label: 'Button name',
+          name: 'P_button_name',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Button link',
+          name: 'P_button_link',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Post SEO Description',
+          name: 'seoDescription',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'SEO Website Name',
+          name: 'seoWebsiteName',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'SEO URL',
+          name: 'seoWebsiteUrl',
+          widget: 'string',
+          required: false,
+          }
+      - {
+          label: 'Post SEO Meta Image',
+          name: 'seoMetaImage',
+          widget: 'image',
+          required: false,
+        }
+      - {
+          label: 'Post SEO Type',
+          name: 'seoType',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'SEO Language',
+          name: 'seoLanguage',
+          widget: 'string',
+          required: false,
+        }
+        
+         
+          
+          
+        
+          
+          
+
+

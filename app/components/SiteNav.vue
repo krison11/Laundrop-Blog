@@ -1,0 +1,296 @@
+<template>
+  <!-- nav w-full h-86 -->
+  <fragment>
+    <!-- NAV -->
+    <nav
+      class="sticky top-0 left-0 flex items-center text-center h-16 bg-navbar justify-between px-8"
+    >
+      <!-- svg logo -->
+      <a href="https://www.Laundrop.se" target="_blank" rel="noopener noreferrer">
+        <div class="cursor-pointer w-46 flex items-center">
+          <svg
+            width="30"
+            height="30"
+            class="m-3"
+            viewBox="0 0 117 141"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M99.6029 17.4597C88.6447 6.52022 74.0174 0.496582 58.4186 0.496582C42.818 0.496582 28.1944 6.52022 17.2343 17.4597C6.27423 28.3992 0.239258 42.9972 0.239258 58.5666C0.239258 74.1361 6.27423 88.7359 17.2343 99.6735L58.4186 140.782L99.6029 99.6735C122.31 77.0068 122.31 40.1265 99.6029 17.4597ZM23.939 24.1537C33.1063 15.0037 45.3508 9.96473 58.4167 9.96473C71.4827 9.96473 83.7272 15.0037 92.8944 24.1537C104.441 35.6802 108.96 51.5924 106.48 66.5634C106.131 66.8361 105.797 67.1448 105.499 67.5405C97.8309 77.7699 84.3817 81.0497 72.7595 75.4749C64.5636 71.5437 58.6197 64.3384 49.8945 61.265C36.5402 56.5632 21.004 59.6346 10.9205 69.3546C10.1388 65.8571 9.72144 62.2478 9.72144 58.5666C9.72523 45.5252 14.7718 33.3056 23.939 24.1537ZM92.8964 92.9796L58.4186 127.391L23.9409 92.9796C19.9739 89.02 16.7828 84.4828 14.4341 79.5556C21.4537 70.5741 32.6149 66.821 43.7894 69.3338C53.7477 71.5721 60.2342 80.0972 69.2725 84.2234C79.7829 89.0219 90.7715 88.5201 100.089 83.8276C98.1042 87.0866 95.7137 90.1675 92.8964 92.9796Z"
+              fill="white"
+            />
+          </svg>
+
+          <svg
+            :class="`${logoCondition} md:block`"
+            width="170"
+            height="80"
+            viewBox="0 0 567 72"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M9.538 4.98059V58.7693H27.9677V67.6602H0.0795898V4.98059H9.538Z" fill="white" />
+            <path
+              d="M93.8812 52.4366H67.045L60.064 67.6609H49.8721L80.888 1.04236L110.808 67.6609H100.458L93.8812 52.4366ZM90.0254 43.5457L80.7275 22.2345L70.984 43.5457H90.0254Z"
+              fill="white"
+            />
+            <path
+              d="M142.337 4.98059V42.7367C142.337 48.1206 143.215 52.0595 144.975 54.5508C147.599 58.152 151.292 59.9485 156.058 59.9485C160.847 59.9485 164.556 58.152 167.183 54.5508C168.941 52.1426 169.821 48.2036 169.821 42.7367V4.98059H179.28V45.3332C179.28 51.9377 177.226 57.3769 173.11 61.6536C168.479 66.4202 162.796 68.7979 156.058 68.7979C149.318 68.7979 143.649 66.4202 139.051 61.6536C134.935 57.3769 132.876 51.9377 132.876 45.3332V4.98059H142.337Z"
+              fill="white"
+            />
+            <path
+              d="M210.927 67.6604V0.718018L256.641 48.5388V4.97804H266.097V71.4748L220.385 23.7758V67.6604H210.927Z"
+              fill="white"
+            />
+            <path
+              d="M297.745 67.6607V4.97833H310.898C317.201 4.97833 322.184 5.60392 325.835 6.84677C329.763 8.06194 333.32 10.1352 336.514 13.0582C342.983 18.9597 346.219 26.713 346.219 36.3181C346.219 45.9509 342.847 53.7485 336.107 59.6998C332.724 62.6782 329.176 64.746 325.472 65.9113C322.007 67.0739 317.099 67.6579 310.735 67.6579H297.745V67.6607ZM307.203 58.7698H311.466C315.715 58.7698 319.247 58.3241 322.059 57.43C324.874 56.4833 327.421 54.9803 329.693 52.9236C334.349 48.6775 336.672 43.1414 336.672 36.3209C336.672 29.4478 334.374 23.8702 329.774 19.5936C325.633 15.7792 319.532 13.8721 311.466 13.8721H307.203V58.7698Z"
+              fill="white"
+            />
+            <path
+              d="M395.97 40.9491L415.374 67.6607H403.806L385.9 42.0009H384.198V67.6607H374.736V4.97833H385.82C394.102 4.97833 400.083 6.53396 403.765 9.64802C407.823 13.1136 409.852 17.6837 409.852 23.3692C409.852 27.8092 408.578 31.6235 406.035 34.8179C403.494 38.0122 400.139 40.0578 395.97 40.9491ZM384.198 33.7632H387.201C396.158 33.7632 400.637 30.3392 400.637 23.491C400.637 17.0802 396.28 13.8665 387.563 13.8665H384.195V33.7632H384.198Z"
+              fill="white"
+            />
+            <path
+              d="M436.877 36.0388C436.877 27.2143 440.11 19.6354 446.579 13.3048C453.02 6.97155 460.76 3.80768 469.8 3.80768C478.735 3.80768 486.392 6.99648 492.78 13.3851C499.191 19.7738 502.399 27.444 502.399 36.4014C502.399 45.4141 499.18 53.0623 492.742 59.3374C486.27 65.643 478.464 68.7958 469.313 68.7958C461.222 68.7958 453.956 65.9946 447.515 60.3948C440.423 54.1971 436.877 46.0757 436.877 36.0388ZM446.416 36.1578C446.416 43.0862 448.744 48.7829 453.394 53.2505C458.025 57.7126 463.37 59.9464 469.432 59.9464C476.009 59.9464 481.556 57.6738 486.079 53.1259C490.599 48.5254 492.858 42.9229 492.858 36.3211C492.858 29.6363 490.624 24.0365 486.159 19.5136C481.719 14.9684 476.225 12.6931 469.676 12.6931C463.157 12.6931 457.646 14.9684 453.153 19.5136C448.663 24.0089 446.416 29.556 446.416 36.1578Z"
+              fill="white"
+            />
+            <path
+              d="M540.381 42.2057V67.6607H530.923V4.97833H541.641C546.889 4.97833 550.856 5.3437 553.535 6.07447C556.239 6.80523 558.625 8.1837 560.679 10.2127C564.281 13.7309 566.08 18.1708 566.08 23.5298C566.08 29.2679 564.159 33.8158 560.314 37.1707C556.466 40.5283 551.287 42.203 544.766 42.203H540.381V42.2057ZM540.381 33.4394H543.911C552.602 33.4394 556.945 30.0956 556.945 23.4107C556.945 16.9446 552.464 13.7087 543.509 13.7087H540.381V33.4394Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </a>
+
+      <!-- end of svg logo -->
+      <!-- *********************************************** -->
+      <!-- if route name is 'index' return Dropdown buttons-->
+      <div v-if="$route.name==='index'">
+        <div>
+          <!-- burger -->
+          <fa
+            v-if="!show"
+            @click="toggle"
+            class="text-white md:hidden text-white text-3xl cursor-pointer"
+            :icon="['fas', 'bars']"
+          />
+          <fa
+            v-if="show"
+            @click="toggle"
+            class="text-white md:hidden text-white text-3xl cursor-pointer"
+            :icon="['fas', 'chevron-up']"
+          />
+          <!-- <span
+            class="iconify text-5xl text-white md:hidden cursor-pointer"
+            data-icon="ion:menu-outline"
+            data-inline="false"
+          ></span>-->
+          <!-- end of burger -->
+          <div
+            :class="`${condition} absolute left-0 flex-col bg-navbar items-center w-screen md:flex md:relative md:flex-row md:w-auto text-xl text-white uppercase`"
+          >
+            <!-- BOKA dropdown -->
+            <div class="dropdown md:w-auto">
+              <div class="nav-btn md:w-auto">
+                <span>BOKA</span>
+                <!-- <span class="iconify ml-1 text-2xl" data-icon="mdi:chevron-down"></span> -->
+              </div>
+              <!-- dropdown content -->
+              <div class="dropdown-content md:absolute">
+                <div class="dropdown-content-btn">
+                  <a href="#">
+                    <div class="bg-navbar">
+                      <!-- <span class="iconify" data-icon="ic:outline-local-laundry-service"></span> -->
+                    </div>BOKA TVÄTT
+                  </a>
+                </div>
+
+                <div class="dropdown-content-btn">
+                  <a href="#">
+                    <div class="bg-navbar">
+                      <!-- <span class="iconify" data-icon="carbon:arrows-horizontal"></span> -->
+                    </div>ABONNEMANG
+                  </a>
+                </div>
+              </div>
+              <!-- end of dropdown content -->
+            </div>
+            <!-- end of BOKA dropdown -->
+            <!-- INFO dropdown -->
+            <div class="dropdown md:w-auto">
+              <div class="nav-btn md:w-auto">
+                <span>INFO</span>
+                <!-- <span class="iconify ml-1 text-2xl" data-icon="mdi:chevron-down"></span> -->
+              </div>
+              <!-- dropdown content -->
+              <div class="dropdown-content md:absolute">
+                <div class="border-b border-lighter">
+                  <div class="dropdown-content-btn">
+                    <a href="#">
+                      <div class="bg-black">
+                        <!-- <span class="iconify" data-icon="fa-regular:list-alt" data-inline="false"></span> -->
+                      </div>PRISLISTA
+                    </a>
+                  </div>
+
+                  <div class="dropdown-content-btn">
+                    <a href="#">
+                      <div class="bg-black">
+                        <!-- <span class="iconify" data-icon="fa-regular:list-alt" data-inline="false"></span> -->
+                      </div>MATTRÄKNAREN
+                    </a>
+                  </div>
+                </div>
+                <div class="dropdown-content-btn">
+                  <a href="#">
+                    <div class="bg-button">
+                      <!-- <span class="iconify" data-icon="octicon:smiley" data-inline="false"></span> -->
+                    </div>OM OSS
+                  </a>
+                </div>
+                <div class="dropdown-content-btn">
+                  <a href="#">
+                    <div class="bg-button">
+                      <!-- <span class="iconify" data-icon="oi:chevron-right" data-inline="false"></span> -->
+                    </div>TVÄTT PROCESS
+                  </a>
+                </div>
+                <div class="dropdown-content-btn">
+                  <a href="#">
+                    <div class="bg-button">
+                      <!-- <span
+                        class="iconify"
+                        data-icon="ant-design:info-circle-filled"
+                        data-inline="false"
+                      ></span>-->
+                    </div>FAQ
+                  </a>
+                </div>
+                <div class="dropdown-content-btn">
+                  <a href="#">
+                    <div class="bg-button">
+                      <!-- <span class="iconify" data-icon="carbon:policy" data-inline="false"></span> -->
+                    </div>VILLKOR
+                  </a>
+                </div>
+              </div>
+              <!-- end of dropdown content -->
+            </div>
+            <!-- end of INFO dropdown -->
+            <!-- CONTACT -->
+            <div class="nav-btn">CONTACT</div>
+            <!-- end of CONTACT -->
+          </div>
+        </div>
+      </div>
+      <!-- *********************************************** -->
+      <!-- else return Page Button -->
+      <div v-else class="w-full md:w-auto flex items-center justify-around text-white">
+        <nuxt-link
+          to="/"
+          class="capitalize mx-2 text-white hover:bg-nav_lighter cursor-pointer text-white rounded p-4"
+        >back to blog</nuxt-link>
+        <a
+          class="uppercase bg-button text-sm rounded-full px-4 py-1"
+          href="https://www.laundrop.se/orders/products"
+          target="_blank"
+          rel="noopener noreferrer"
+        >boka upphämtning</a>
+      </div>
+    </nav>
+    <!-- end of NAV -->
+    <!-- *********************************************** -->
+    <!-- if route name is index return the blog div -->
+    <div
+      v-if="$route.name==='index'"
+      class="bg-navbar h-40 flex shadow-xl hidden md:flex flex-col justify-center items-center"
+    >
+      <div class="text-5xl text-white">BLOG</div>
+      <div class="h-1 w-10 bg-yellow"></div>
+    </div>
+  </fragment>
+</template>
+
+<script lang="ts">
+import Vue from "vue";
+import { Component } from "vue-property-decorator";
+import { Fragment } from "vue-fragment";
+
+@Component({
+  components: { Fragment }
+})
+export default class SiteNav extends Vue {
+  show: boolean = false;
+  condition: string = "hidden";
+  logoCondition: any = this.lgCondition();
+
+  lgCondition() {
+    let condition = "";
+    this.$route.name === "index"
+      ? (condition = "block")
+      : (condition = "hidden");
+    return condition;
+  }
+
+  toggle() {
+    this.show = !this.show;
+    this.show === true
+      ? (this.condition = "flex")
+      : (this.condition = "hidden");
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.nav-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  &:hover {
+    @apply bg-nav_lighter;
+  }
+}
+
+.dropdown {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  &:hover &-content {
+    display: block;
+  }
+  &-content {
+    z-index: 1;
+    @apply shadow-2xl;
+    display: none;
+    background: #ffffff;
+    color: #000000;
+    padding: 1rem;
+    border-radius: 3px;
+    &-btn {
+      padding: 5px;
+      border-radius: 3px;
+      &:hover {
+        @apply bg-light_grey;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        div {
+          @apply p-2;
+          @apply text-white;
+          @apply text-2xl;
+          @apply rounded-full;
+          @apply mr-2;
+        }
+      }
+    }
+  }
+}
+</style>
