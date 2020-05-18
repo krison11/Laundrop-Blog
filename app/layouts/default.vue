@@ -20,10 +20,10 @@ export default class DefaultLayout extends Vue {}
 </script>
 
 <style lang="scss">
-/*
+
 @import 'markdown';
 @import 'main';
-*/
+
 .nuxt {
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
 }
