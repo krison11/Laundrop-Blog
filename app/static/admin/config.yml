@@ -80,19 +80,19 @@ collections:
             fields: 
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Text", name: "text", widget: "string", required: false }
-              # - { 
-              #     label: "Color",
-              #     name: "color",
-              #     widget: "select",
-              #     default: "bg-secondary",
-              #     options:
-              #       - { label: "Black", value: "bg-black" }
-              #       - { label: "White", value: "bg-white" }
-              #       - { label: "Pink", value: "bg-ld-pink" } 
-              #       - { label: "Yellow", value: "bg-ld-yellow" } 
-              #       - { label: "Primary", value: "bg-primary" } 
-              #       - { label: "Secondary", value: "bg-secondary" }, required: false
-              #   }
+              - label: "Color"
+                name: "color"
+                widget: "select"
+                default: "text-secondary"
+                required: false
+                options:
+                  - { label: "Black", value: "text-black" }
+                  - { label: "White", value: "text-white" }
+                  - { label: "Pink", value: "text-ld-pink" } 
+                  - { label: "Yellow", value: "text-ld-yellow" } 
+                  - { label: "Primary", value: "text-primary" } 
+                  - { label: "Secondary", value: "text-secondary" }
+                
             
           - label: "Author"
             name: "author"
@@ -128,13 +128,13 @@ collections:
               - label: "Color"
                 name: "color" 
                 widget: "select"
-                default: "bg-ld-pink"
+                default: "bg-ld-pink text-white"
                 required: false
                 options:
-                  - { label: "Black", value: "bg-black" }
-                  - { label: "Pink", value: "bg-ld-pink" } 
-                  - { label: "Primary", value: "bg-primary" } 
-                  - { label: "Secondary", value: "bg-secondary" } 
+                  - { label: "Black", value: "bg-black text-white" }
+                  - { label: "Pink", value: "bg-ld-pink text-white" } 
+                  - { label: "Primary", value: "bg-primary text-white" } 
+                  - { label: "Secondary", value: "bg-secondary text-white" } 
                     
           - label: "Seo"
             name: "seo"
