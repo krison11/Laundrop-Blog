@@ -93,6 +93,12 @@ collections:
               #       - { label: "Primary", value: "bg-primary" } 
               #       - { label: "Secondary", value: "bg-secondary" }, required: false
               #   }
+              
+          - label: "Markdown"
+            name: "markdown"
+            widget: "markdown"
+            collapsed: true
+
           - label: "Author"
             name: "author"
             widget: "object"
