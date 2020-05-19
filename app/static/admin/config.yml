@@ -87,6 +87,13 @@ collections:
           required: false,
         }
       - {
+          label: 'Page header text color',
+          name: 'P_headerTextColor',
+          widget: 'list',
+          default: ["black", "laundrop teal", "laundrop dark teal", "white", "pink"],
+          required: false,
+        }
+      - {
           label: 'Page Author Image',
           name: 'P_authorImg',
           widget: 'image',
@@ -129,36 +136,13 @@ collections:
           widget: 'image',
           required: false,
         }
-      - {
-          label: 'Page Content Text On Image',
-          name: 'P_ContentImgText',
-          widget: 'text',
-          required: false,
-        }
-      - {
-          label: 'Page Markdown Title 2',
-          name: 'P_markdownTitle2',
-          widget: 'string',
-          required: false,
-        }
-      - {
-          label: 'Page Markdown 2',
-          name: 'P_markdown2',
-          widget: 'markdown',
-          required: false,
-        }
-      - {
-          label: 'Button name',
-          name: 'P_button_name',
-          widget: 'string',
-          required: false,
-        }
-      - {
-          label: 'Button link',
-          name: 'P_button_link',
-          widget: 'string',
-          required: false,
-        }
+      - label: "Button CTA"
+        name: "button_cta"
+        widget: "object"
+        fields: 
+          - {label: "Text", name: "btn_text", widget: "string"}
+          - {label: "Link", name: "btn_link", widget: "string"}
+          - {label: "Color", name: "btn_color", widget: "list", default: ["black", "laundrop teal", "laundrop dark teal", "white", "pink"] }
       - {
           label: 'Post SEO Description',
           name: 'seoDescription',

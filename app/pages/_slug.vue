@@ -1,12 +1,14 @@
 <template>
   <article class="post" :class="post.slug">
-    <section class="header">
+    <section class="header ">
       <div class="header-img h-auto bg-fixed bg-left-top bg-cover bg-center" :lazy-background="post.P_headerImg">
-        <div class="header-img-text w-full p-8 w-2/3 p-16 md:w-1/2 md:p-16 lg:p-20">
-          <h1 class="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-image_text uppercase font-bold tracking-wide">
-            {{ post.P_headerImgText }}
-          </h1>
-          <P class="text-sm sm:text-xl text-bg-grey">By Laundrop</P>
+        <div class="container  h-full flex items-center px-2">
+          <div class="header-img-text w-full w-2/3 md:w-1/2">
+            <h1 class="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-image_text uppercase font-bold tracking-wide">
+              {{ post.P_headerImgText }}
+            </h1>
+            <p class="text-sm sm:text-xl text-bg-grey">By Laundrop</p>
+          </div>
         </div>
       </div>
     </section>
@@ -17,7 +19,9 @@
 
         <div class="author-text text-white">
           <p class="">{{ post.P_authorName }}</p>
-          <p>{{ post.publishedDate }} · <i class="">{{ post.P_authorTitle }}</i></p>
+          <p>
+            {{ post.publishedDate }} · <i class="">{{ post.P_authorTitle }}</i>
+          </p>
         </div>
       </div>
     </section>
