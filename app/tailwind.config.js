@@ -31,15 +31,13 @@ module.exports = {
       letterSpacing: {
         widest: '.2em'
       }
-
     },
-    purge: false,
-    variants: {
-    },
-    plugins: [
-      // ...
-      require('tailwindcss'),
-      require('autoprefixer'),
-      // ...
-    ]
-  };
+  },
+  purge: false,
+  plugins: [
+    // ...
+    require('tailwindcss'),
+    require('autoprefixer'),
+    // ...
+  ]
+};
