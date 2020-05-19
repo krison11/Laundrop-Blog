@@ -31,26 +31,29 @@ collections:
               label: "SEO Website Name",
               name: "seoWebsiteName",
               widget: "string",
-              required: false,
+              required: false
             }
           - {
               label: "SEO Website URL",
               name: "seoWebsiteUrl",
               widget: "string",
-              required: false,
+              required: false
             }
-          - { label: "Seo Meta Image", name: "seoMetaImage", widget: "image" }
+          - { label: "Seo Meta Image",
+              name: "seoMetaImage",
+              widget: "image",
+              required: false }
           - {
               label: "SEO Type",
               name: "seoType",
               widget: "string",
-              required: false,
+              required: false
             }
           - {
               label: "SEO Language",
               name: "seoLanguage",
               widget: "string",
-              required: false,
+              required: false
             }
   - label: Blog
     name: blog
@@ -59,6 +62,8 @@ collections:
     slug: "{{slug}}"
     sort: "published_date:desc"
     folder: "app/content/blog"
+    editor:
+      preview: true
     fields:
       - label: "Preview"
         name: "preview"
