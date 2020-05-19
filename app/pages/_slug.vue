@@ -31,7 +31,7 @@
           </p>
         </div>
       </div>
-    </section>
+    </section
 
     <section class="container px-2">
       <div
