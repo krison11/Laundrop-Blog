@@ -128,11 +128,12 @@ collections:
               - label: "Color"
                 name: "color" 
                 widget: "select"
+                required: false
                 options:
                   - { label: "Black", value: "bg-black" }
                   - { label: "Pink", value: "bg-ld-pink" } 
                   - { label: "Primary", value: "bg-primary" } 
-                  - { label: "Secondary", value: "bg-secondary" }, required: false 
+                  - { label: "Secondary", value: "bg-secondary" } 
                     
           - label: "Seo"
             name: "seo"
