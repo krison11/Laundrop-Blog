@@ -41,8 +41,7 @@
       />
       <div class="w-full text-center">
         <a
-          :class="getColor(post.page.button.color)"
-          class="my-20 self-center shadow-xl text-xl text-white rounded-full px-6 py-2 uppercase"
+          :class="`${post.page.button.color} my-20 self-center shadow-xl text-xl rounded-full px-6 py-2 uppercase`"
           :href="post.page.button.link"
           target="_blank"
         >{{ post.page.button.text }}</a>
@@ -106,34 +105,34 @@ export default class BlogPost extends Vue {
   post: Post = this.$store.state.posts.find(
     (post: Post) => post.slug === this.params()
   );
-
-  getColor(color) {
-    switch (color) {
-      case "black":
-        "bg-black text-white";
-        break;
-      case "laundrop teal":
-        "bg-primary text-white";
-        break;
-      case "laundrop dark":
-        "bg-secondary text-white";
-        break;
-      case "white":
-        "bg-white text-black";
-        break;
-      case "pink":
-        "bg-ld-pink text-white";
-        break;
-      default:
-        "bg-primary text-white";
-        break;
-    }
-
-    return color;
-  }
   params() {
     return this.$route.params.slug;
   }
+
+  // getColor(color) {
+  //   switch (color) {
+  //     case "black":
+  //       "bg-black text-white";
+  //       break;
+  //     case "laundrop teal":
+  //       "bg-primary text-white";
+  //       break;
+  //     case "laundrop dark":
+  //       "bg-secondary text-white";
+  //       break;
+  //     case "white":
+  //       "bg-white text-black";
+  //       break;
+  //     case "pink":
+  //       "bg-ld-pink text-white";
+  //       break;
+  //     default:
+  //       "bg-primary text-white";
+  //       break;
+  //   }
+
+  //   return color;
+  // }
 }
 </script>
 
