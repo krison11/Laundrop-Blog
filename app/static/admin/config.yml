@@ -128,6 +128,7 @@ collections:
               - label: "Color"
                 name: "color" 
                 widget: "select"
+                default: "bg-ld-pink"
                 required: false
                 options:
                   - { label: "Black", value: "bg-black" }
