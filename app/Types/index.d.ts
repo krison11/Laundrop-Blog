@@ -24,7 +24,7 @@ interface Author {
 }
 
 interface Button {
-  colors: string;
+  color: string;
   text: string;
   link: string;
 }

@@ -1,5 +1,5 @@
 <template>
-  <article class="post" :class="post.slug">
+  <article class="post">
     <section class="header">
       <div
         class="header-img h-auto bg-fixed bg-left-top bg-cover bg-center"
@@ -34,10 +34,14 @@
     </section>
 
     <section class="container px-2">
-      <div class="text-lg markdown container" v-lazy-load="$md.render(post.page.markdown)" />
+      <div
+        v-if="post.page.markdown"
+        class="text-lg markdown container"
+        v-lazy-load="$md.render(post.page.markdown)"
+      />
       <div class="w-full text-center">
         <a
-          :class="getColor(color)"
+          :class="getColor(post.page.button.color)"
           class="my-20 self-center shadow-xl text-xl text-white rounded-full px-6 py-2 uppercase"
           :href="post.page.button.link"
           target="_blank"
@@ -124,6 +128,7 @@ export default class BlogPost extends Vue {
         "bg-primary text-white";
         break;
     }
+
     return color;
   }
   params() {
