@@ -67,7 +67,7 @@ import MetaInfo from "vue-meta";
         {
           hid: "og:description",
           name: "og:description",
-          content: this.post.page.seo.metadescription
+          content: this.post.page.seo.metaDescription
         },
         {
           hid: "og:site_name",
@@ -87,7 +87,7 @@ import MetaInfo from "vue-meta";
         {
           hid: "og:type",
           name: "og:type",
-          content: this.post.page.seo.metaLanguage
+          content: this.post.page.seo.metaType
         },
         {
           hid: "og:locale",

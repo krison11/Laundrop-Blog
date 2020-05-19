@@ -65,61 +65,48 @@ collections:
         name: 'preview',
         widget: 'object',
         fields: 
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Excerpt", name: "excerpt", widget: "text"}
-          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Title", name: "title", widget: "string",required: false}
+          - {label: "Excerpt", name: "excerpt", widget: "text",required: false}
+          - {label: "Image", name: "image", widget: "image"required: false}
 
       - label: 'Post Page',
         name: 'page',
         widget: 'object',
         fields:
-          - {
-          label: 'Post Title',
-          name: 'title',
-          widget: 'string',
-          required: false,
-            }
-          - {
-          label: 'Post Excerpt',
-          name: 'excerpt',
-          widget: 'text',
-          required: false,
-            }
-         - { label: 'Post Image', name: 'image', widget: 'image', required: false }
          - {
           label: 'Hero image',
-          name: 'P_headerImg',
+          name: 'image',
           widget: 'image',
           required: false,
            }
          - {
           label: 'Hero text',
-          name: 'P_headerImgText',
+          name: 'text',
           widget: 'string',
           required: false,
            }
          - {
           label: 'Hero text color',
-          name: 'P_headerTextColor',
+          name: 'color',
           widget: 'select',
           options: ["black", "laundrop teal", "laundrop dark teal", "white", "pink"],
           required: false,
            }
          - {
           label: 'Author Image',
-          name: 'P_authorImg',
+          name: 'image',
           widget: 'image',
           required: false,
            }
          - {
           label: 'Author Min of read',
-          name: 'P_authorTitle',
+          name: 'title',
           widget: 'string',
           required: false,
            }
          - {
           label: 'Page Author Name',
-          name: 'P_authorName',
+          name: 'name',
           widget: 'string',
           required: false,
            }
@@ -130,22 +117,11 @@ collections:
           format: 'Do MMM YYYY',
           required: false,
            }
+         
          - {
-          label: 'Page Markdown Title 1',
-          name: 'P_markdownTitle1',
-          widget: 'string',
-          required: false,
-           }
-         - {
-          label: 'Page Markdown 1',
-          name: 'P_markdown1',
+          label: 'Markdown',
+          name: 'markdown',
           widget: 'markdown',
-          required: false,
-           }
-         - {
-          label: 'Page Content Image',
-          name: 'P_ContentImg',
-          widget: 'image',
           required: false,
            }
          - label: "Button CTA"
@@ -157,37 +133,37 @@ collections:
              - {label: "Color", name: "btn_color", widget: "select", options: ["black",  "laundrop teal", "laundrop dark teal", "white", "pink"] }
          - {
           label: 'Post SEO Description',
-          name: 'seoDescription',
+          name: 'metaDescription',
           widget: 'string',
           required: false,
            }
          - {
           label: 'SEO Website Name',
-          name: 'seoWebsiteName',
+          name: 'metaWebsiteName',
           widget: 'string',
           required: false,
            }
          - {
           label: 'SEO URL',
-          name: 'seoWebsiteUrl',
+          name: 'metaWebsiteUrl',
           widget: 'string',
           required: false,
            }
          - {
           label: 'Post SEO Meta Image',
-          name: 'seoMetaImage',
+          name: 'metaImage',
           widget: 'image',
           required: false,
            }
          - {
           label: 'Post SEO Type',
-          name: 'seoType',
+          name: 'metaType',
           widget: 'string',
           required: false,
            }
          - {
           label: 'SEO Language',
-          name: 'seoLanguage',
+          name: 'metaLanguage',
           widget: 'string',
           required: false,
            }

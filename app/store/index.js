@@ -1,8 +1,5 @@
 import Vuex from 'vuex'
 
-
-
-
 export const state = () => ({
   posts: [],
 });
@@ -13,7 +10,6 @@ export const mutations = {
   },
 
 };
-
 export const actions = {
   async nuxtServerInit({ commit }) {
 

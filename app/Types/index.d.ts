@@ -14,6 +14,7 @@ interface Preview {
 interface Hero {
   image: string;
   text: string;
+  color: string;
 }
 interface Author {
   image: string;
@@ -23,7 +24,7 @@ interface Author {
 }
 
 interface Button {
-  colors: string[];
+  colors: string;
   text: string;
   link: string;
 }
@@ -31,7 +32,7 @@ interface Button {
 interface SEO {
   metaWebsiteName: string;
   metaWebsiteUrl: string;
-  metadescription: string;
+  metaDescription: string;
   metaImage: string;
   metaType: string;
   metaLanguage: string;
