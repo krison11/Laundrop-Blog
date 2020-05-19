@@ -30,7 +30,7 @@
     <section class="px-6 md:px-10 lg:px-20 pt-4">
       <div class>
         <h1 class="text-3xl text-image_text uppercase">{{ post.P_markdownTitle1 }}</h1>
-        <div class="text-lg markdown" v-lazy-load="$md.render(post.P_markdown1)" />
+        <div class="text-lg markdown container" v-lazy-load="$md.render(post.P_markdown1)" />
       </div>
       <div
         class="content-img bg-contain bg-no-repeat md:bg-cover bg-center flex justify-center items-center my-6 md:my-16 text-base sm:text-lg md:text-2xl lg:text-4xl xl:text-5xl text-white uppercase"
@@ -42,7 +42,7 @@
       v-lazy-load-->
       <div class="flex flex-col">
         <h1 class="text-3xl text-image_text uppercase">{{ post.P_markdownTitle2 }}</h1>
-        <div class="text-lg markdown" v-lazy-load="$md.render(post.P_markdown2)" />
+        <div class="text-lg markdown container" v-lazy-load="$md.render(post.P_markdown2)" />
         <a
           class="my-20 self-center bg-button text-xl text-white rounded-full px-6 py-2 uppercase shadow-xl"
           :href="post.P_button_link"
