@@ -65,31 +65,76 @@ collections:
         widget: "object"
         collapsed: true
         fields:
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "Excerpt", name: "excerpt", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-          - label: "Title"
-            name: "title"
-            widget: "string"
       - label: "Page"
         name: "page"
         widget: "object"
         collapsed: true
         fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Text", name: "text", widget: "string" }
+              - { 
+                  label: "Color",
+                  name: "color",
+                  widget: "string",
+                  options:
+                    - { label: "Black", value: "bg-black" }
+                    - { label: "White", value: "bg-white" }
+                    - { label: "Pink", value: "bg-ld-pink" } 
+                    - { label: "Yellow", value: "bg-ld-yellow" } 
+                    - { label: "Primary", value: "bg-primary" } 
+                    - { label: "Secondary", value: "bg-secondary" } 
+                }
           - label: "Author"
             name: "author"
             widget: "object"
             collapsed: true
             fields: 
-              - { label: "Title", name: "title", widget: "string" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
+              - { label: "Minutes Of Read", name: "title", widget: "string" }
+              - { label: "Published Date",
+                  name: "publishDate",
+                  widget: "datetime", 
+                  default: "",
+                  dateFormat: "Do MMM YYYY", 
+                  timeFormat: "HH:mm", 
+                  format: "LLL",
+                  pickerUtc: true 
+                }
           - label: "Button"
             name: "button"
             widget: "object"
             collapsed: true
             fields: 
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Color",
+                  name: "color", 
+                  widget: "image",
+                  options:
+                    - { label: "Black", value: "bg-black" }
+                    - { label: "Pink", value: "bg-ld-pink" } 
+                    - { label: "Primary", value: "bg-primary" } 
+                    - { label: "Secondary", value: "bg-secondary" } 
+                }
+          - label: "Seo"
+            name: "seo"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Website name", name: "metaWebsiteName", widget: "string" }
+              - { label: "Website Url", name: "metaWebsiteUrl", widget: "string" }
+              - { label: "Description", name: "metaDescription", widget: "text" }
+              - { label: "Image", name: "metaImage", widget: "image" }
+              - { label: "Type Article/Website?", name: "metaType", widget: "text" }
+              - { label: "Language", name: "metaLanguage", widget: "text" }
 
           
