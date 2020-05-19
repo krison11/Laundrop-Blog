@@ -6,6 +6,9 @@
  */
 module.exports = {
   theme: {
+    container: {
+      center: true
+    },
     extend: {
       colors: {
         navbar: '#4DC1C3',
