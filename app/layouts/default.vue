@@ -1,7 +1,7 @@
 <template>
   <main :class="$route.name">
     <SiteNav />
-    <nuxt class="nuxt" />
+    <nuxt class="nuxt container" />
     <SiteFooter />
   </main>
 </template>
