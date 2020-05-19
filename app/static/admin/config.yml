@@ -70,6 +70,7 @@ collections:
         widget: "object"
         collapsed: true
         fields:
+          - { label: "Slug", name: "slug", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Excerpt", name: "excerpt", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
@@ -149,7 +150,7 @@ collections:
               - { label: "Website name", name: "metaWebsiteName", widget: "string", required: false }
               - { label: "Website Url", name: "metaWebsiteUrl", widget: "string", required: false }
               - { label: "Description", name: "metaDescription", widget: "text", required: false }
-              - { label: "Image", name: "metaImage", widget: "image" }
+              - { label: "Image", name: "metaImage", widget: "image", required: false }
               - { label: "Type Article/Website?", name: "metaType", widget: "text", required: false }
               - { label: "Language", name: "metaLanguage", widget: "text", required: false }
 
