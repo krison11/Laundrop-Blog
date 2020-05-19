@@ -79,18 +79,19 @@ collections:
             collapsed: true
             fields: 
               - { label: "Image", name: "image", widget: "image" }
-              - { label: "Text", name: "text", widget: "string", required: false, }
+              - { label: "Text", name: "text", widget: "string", required: false }
               - { 
                   label: "Color",
                   name: "color",
                   widget: "select",
+                  default: "bg-secondary",
                   options:
                     - { label: "Black", value: "bg-black" }
                     - { label: "White", value: "bg-white" }
                     - { label: "Pink", value: "bg-ld-pink" } 
                     - { label: "Yellow", value: "bg-ld-yellow" } 
                     - { label: "Primary", value: "bg-primary" } 
-                    - { label: "Secondary", value: "bg-secondary" } 
+                    - { label: "Secondary", value: "bg-secondary" }, required: false
                 }
           - label: "Author"
             name: "author"
@@ -99,15 +100,16 @@ collections:
             fields: 
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
-              - { label: "Minutes Of Read", name: "title", widget: "string" }
+              - { label: "Minutes Of Read", name: "title", widget: "string", required: false }
               - { label: "Published Date",
                   name: "publishDate",
                   widget: "datetime", 
-                  default: "",
+                  default: "Do MMM YYYY",
                   dateFormat: "Do MMM YYYY", 
                   timeFormat: "HH:mm", 
                   format: "LLL",
-                  pickerUtc: true 
+                  pickerUtc: true,
+                  required: false 
                 }
           - label: "Button"
             name: "button"
@@ -123,18 +125,18 @@ collections:
                     - { label: "Black", value: "bg-black" }
                     - { label: "Pink", value: "bg-ld-pink" } 
                     - { label: "Primary", value: "bg-primary" } 
-                    - { label: "Secondary", value: "bg-secondary" } 
+                    - { label: "Secondary", value: "bg-secondary" }, required: false 
                 }
           - label: "Seo"
             name: "seo"
             widget: "object"
             collapsed: true
             fields:
-              - { label: "Website name", name: "metaWebsiteName", widget: "string" }
-              - { label: "Website Url", name: "metaWebsiteUrl", widget: "string" }
-              - { label: "Description", name: "metaDescription", widget: "text" }
+              - { label: "Website name", name: "metaWebsiteName", widget: "string", required: false }
+              - { label: "Website Url", name: "metaWebsiteUrl", widget: "string", required: false }
+              - { label: "Description", name: "metaDescription", widget: "text", required: false }
               - { label: "Image", name: "metaImage", widget: "image" }
-              - { label: "Type Article/Website?", name: "metaType", widget: "text" }
-              - { label: "Language", name: "metaLanguage", widget: "text" }
+              - { label: "Type Article/Website?", name: "metaType", widget: "text", required: false }
+              - { label: "Language", name: "metaLanguage", widget: "text", required: false }
 
           
