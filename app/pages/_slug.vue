@@ -17,7 +17,7 @@
     </section>
 
     <section class="bg-image_text">
-      <!-- <div class="flex items-center row-span-2 p-3 container px-2">
+      <div class="flex items-center row-span-2 p-3 container px-2">
         <div
           class="author-img h-16 w-16 bg-center bg-cover rounded-full mr-4"
           :lazy-background="post.page.author.image"
@@ -30,7 +30,7 @@
             <i class>{{ post.page.author.publishedDate }}</i>
           </p>
         </div>
-      </div>-->
+      </div>
     </section>
 
     <section class="container px-2">
