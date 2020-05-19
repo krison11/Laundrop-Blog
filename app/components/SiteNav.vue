@@ -82,8 +82,17 @@
             :icon="['fas', 'chevron-up']"
           />
           <!-- <span
+            v-if="!show"
+            @click="toggle"
             class="iconify text-5xl text-white md:hidden cursor-pointer"
             data-icon="ion:menu-outline"
+            data-inline="false"
+          ></span>
+          <span
+            v-if="show"
+            @click="toggle"
+            class="iconify text-5xl text-white md:hidden cursor-pointer"
+            data-icon="cil:x"
             data-inline="false"
           ></span>-->
           <!-- end of burger -->
@@ -94,14 +103,14 @@
             <div class="dropdown md:w-auto">
               <div class="nav-btn md:w-auto">
                 <span>BOKA</span>
-                <!-- <span class="iconify ml-1 text-2xl" data-icon="mdi:chevron-down"></span> -->
+                <span class="iconify ml-1 text-2xl" data-icon="mdi:chevron-down"></span>
               </div>
               <!-- dropdown content -->
               <div class="dropdown-content md:absolute">
                 <div class="dropdown-content-btn">
                   <a href="#">
                     <div class="bg-navbar">
-                      <!-- <span class="iconify" data-icon="ic:outline-local-laundry-service"></span> -->
+                      <span class="iconify" data-icon="ic:outline-local-laundry-service"></span>
                     </div>BOKA TVÄTT
                   </a>
                 </div>
@@ -109,7 +118,7 @@
                 <div class="dropdown-content-btn">
                   <a href="#">
                     <div class="bg-navbar">
-                      <!-- <span class="iconify" data-icon="carbon:arrows-horizontal"></span> -->
+                      <span class="iconify" data-icon="carbon:arrows-horizontal"></span>
                     </div>ABONNEMANG
                   </a>
                 </div>
@@ -121,7 +130,7 @@
             <div class="dropdown md:w-auto">
               <div class="nav-btn md:w-auto">
                 <span>INFO</span>
-                <!-- <span class="iconify ml-1 text-2xl" data-icon="mdi:chevron-down"></span> -->
+                <span class="iconify ml-1 text-2xl" data-icon="mdi:chevron-down"></span>
               </div>
               <!-- dropdown content -->
               <div class="dropdown-content md:absolute">
@@ -129,7 +138,7 @@
                   <div class="dropdown-content-btn">
                     <a href="#">
                       <div class="bg-black">
-                        <!-- <span class="iconify" data-icon="fa-regular:list-alt" data-inline="false"></span> -->
+                        <span class="iconify" data-icon="fa-regular:list-alt" data-inline="false"></span>
                       </div>PRISLISTA
                     </a>
                   </div>
@@ -137,7 +146,7 @@
                   <div class="dropdown-content-btn">
                     <a href="#">
                       <div class="bg-black">
-                        <!-- <span class="iconify" data-icon="fa-regular:list-alt" data-inline="false"></span> -->
+                        <span class="iconify" data-icon="fa-regular:list-alt" data-inline="false"></span>
                       </div>MATTRÄKNAREN
                     </a>
                   </div>
@@ -145,32 +154,32 @@
                 <div class="dropdown-content-btn">
                   <a href="#">
                     <div class="bg-button">
-                      <!-- <span class="iconify" data-icon="octicon:smiley" data-inline="false"></span> -->
+                      <span class="iconify" data-icon="octicon:smiley" data-inline="false"></span>
                     </div>OM OSS
                   </a>
                 </div>
                 <div class="dropdown-content-btn">
                   <a href="#">
                     <div class="bg-button">
-                      <!-- <span class="iconify" data-icon="oi:chevron-right" data-inline="false"></span> -->
+                      <span class="iconify" data-icon="oi:chevron-right" data-inline="false"></span>
                     </div>TVÄTT PROCESS
                   </a>
                 </div>
                 <div class="dropdown-content-btn">
                   <a href="#">
                     <div class="bg-button">
-                      <!-- <span
+                      <span
                         class="iconify"
                         data-icon="ant-design:info-circle-filled"
                         data-inline="false"
-                      ></span>-->
+                      ></span>
                     </div>FAQ
                   </a>
                 </div>
                 <div class="dropdown-content-btn">
                   <a href="#">
                     <div class="bg-button">
-                      <!-- <span class="iconify" data-icon="carbon:policy" data-inline="false"></span> -->
+                      <span class="iconify" data-icon="carbon:policy" data-inline="false"></span>
                     </div>VILLKOR
                   </a>
                 </div>
@@ -218,7 +227,12 @@ import { Component } from "vue-property-decorator";
 import { Fragment } from "vue-fragment";
 
 @Component({
-  components: { Fragment }
+  components: { Fragment },
+  head() {
+    return {
+      script: [{ src: "https://code.iconify.design/1/1.0.6/iconify.min.js" }]
+    };
+  }
 })
 export default class SiteNav extends Vue {
   show: boolean = false;

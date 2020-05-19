@@ -26,14 +26,12 @@ import { Component, Vue } from "vue-property-decorator";
 @Component({
   transition() {
     return "slide-right";
-  }
-  // head() {
-  //   return {
-  //     script: [
-  //       { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }
-  //     ]
-  //   };
-  // }
+  },
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
 })
 export default class BlogIndex extends Vue {
   get posts(): Post[] {

@@ -58,17 +58,6 @@ const nuxtConfig: Configuration = {
         href: 'www.somewhere....',
       },
     ],
-
-    // inconify and netlify identity
-    script: [
-      {
-        src: "https://identity.netlify.com/v1/netlify-identity-widget.js"
-      },
-      {
-        src: "https://code.iconify.design/1/1.0.6/iconify.min.js"
-      },
-    ]
-
   },
 
   // adding the icon on the tab
