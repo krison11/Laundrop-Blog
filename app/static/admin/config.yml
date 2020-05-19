@@ -125,14 +125,13 @@ collections:
             fields: 
               - { label: "Text", name: "text", widget: "string" }
               - { label: "Link", name: "link", widget: "string" }
-              - { label: "City",
-                  name: "airport-code",
-                  widget: "select",
+                - label: "City"
+                  name: "airport-code"
+                  widget: "select"
                   options:
                     - { label: "Chicago", value: "ORD" }
                     - { label: "Paris", value: "CDG" }
                     - { label: "Tokyo", value: "HND" }
-                }
               # - { label: "Color",
               #     name: "color", 
               #     widget: "select",
