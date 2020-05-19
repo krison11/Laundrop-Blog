@@ -142,7 +142,7 @@ collections:
         fields: 
           - {label: "Text", name: "btn_text", widget: "string"}
           - {label: "Link", name: "btn_link", widget: "string"}
-          - {label: "Color", name: "btn_color", widget: "options", default: ["black", "laundrop teal", "laundrop dark teal", "white", "pink"] }
+          - {label: "Color", name: "btn_color", widget: "select", options: ["black", "laundrop teal", "laundrop dark teal", "white", "pink"] }
       - {
           label: 'Post SEO Description',
           name: 'seoDescription',
