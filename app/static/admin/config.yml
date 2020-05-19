@@ -125,21 +125,14 @@ collections:
             fields: 
               - { label: "Text", name: "text", widget: "string" }
               - { label: "Link", name: "link", widget: "string" }
-                - label: "City"
-                  name: "airport-code"
-                  widget: "select"
-                  options:
-                    - { label: "Chicago", value: "ORD" }
-                    - { label: "Paris", value: "CDG" }
-                    - { label: "Tokyo", value: "HND" }
-              # - { label: "Color",
-              #     name: "color", 
-              #     widget: "select",
-              #     options:
-              #       - { label: "Black", value: "bg-black", required: false }
-              #       - { label: "Pink", value: "bg-ld-pink", required: false } 
-              #       - { label: "Primary", value: "bg-primary", required: false } 
-              #       - { label: "Secondary", value: "bg-secondary" }, required: false }
+              - label: "Color",
+                name: "color", 
+                widget: "select",
+                options:
+                  - { label: "Black", value: "bg-black" }
+                  - { label: "Pink", value: "bg-ld-pink" } 
+                  - { label: "Primary", value: "bg-primary" } 
+                  - { label: "Secondary", value: "bg-secondary" }, required: false 
                     
           - label: "Seo"
             name: "seo"
