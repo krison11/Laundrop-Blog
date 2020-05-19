@@ -1,7 +1,7 @@
 <template>
   <main :class="$route.name">
     <SiteNav />
-    <nuxt class="nuxt container" />
+    <nuxt class="nuxt" />
     <SiteFooter />
   </main>
 </template>
@@ -13,8 +13,8 @@ import SiteNav from "../components/SiteNav.vue";
 @Component({
   components: {
     SiteNav,
-    SiteFooter
-  }
+    SiteFooter,
+  },
 })
 export default class DefaultLayout extends Vue {}
 </script>
