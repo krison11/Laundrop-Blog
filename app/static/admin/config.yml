@@ -93,12 +93,7 @@ collections:
               #       - { label: "Primary", value: "bg-primary" } 
               #       - { label: "Secondary", value: "bg-secondary" }, required: false
               #   }
-              
-          - label: "Markdown"
-            name: "markdown"
-            widget: "markdown"
-            collapsed: true
-
+            
           - label: "Author"
             name: "author"
             widget: "object"
@@ -117,6 +112,12 @@ collections:
                   pickerUtc: true,
                   required: false 
                 }
+
+          - label: "Markdown"
+            name: "markdown"
+            widget: "markdown"
+            collapsed: true
+
           - label: "Button"
             name: "button"
             widget: "object"
@@ -124,15 +125,14 @@ collections:
             fields: 
               - { label: "Text", name: "text", widget: "string" }
               - { label: "Link", name: "link", widget: "string" }
-              # - { label: "Color",
-              #     name: "color", 
-              #     widget: "select",
-              #     options:
-              #       - { label: "Black", value: "bg-black" }
-              #       - { label: "Pink", value: "bg-ld-pink" } 
-              #       - { label: "Primary", value: "bg-primary" } 
-              #       - { label: "Secondary", value: "bg-secondary" }, required: false 
-              #   }
+              - { label: "Color",
+                  name: "color", 
+                  widget: "select",
+                  options:
+                    - { label: "Black", value: "bg-black" }
+                    - { label: "Pink", value: "bg-ld-pink" } 
+                    - { label: "Primary", value: "bg-primary" } 
+                    - { label: "Secondary", value: "bg-secondary" }, required: false }
           - label: "Seo"
             name: "seo"
             widget: "object"
