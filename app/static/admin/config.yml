@@ -7,8 +7,8 @@ backend:
 publish_mode: editorial_workflow
 
 # Media and Public Folders https://www.netlifycms.org/docs/configuration-options/#media-and-public-folders
-media_folder: 'app/static/images/uploads' # Media files will be stored in the repo under images/uploads
-public_folder: '/images/uploads'
+media_folder: "app/static/images/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/images/uploads"
 
 # Collections https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
@@ -18,170 +18,70 @@ collections:
       - label: Meta Info
         name: meta
         format: json
-        file: 'app/content/metaContent/meta.json'
+        file: "app/content/metaContent/meta.json"
         fields:
-          - { label: 'Seo Title', name: 'seoTitle', widget: 'string' }
+          - { label: "Seo Title", name: "seoTitle", widget: "string" }
           - {
-              label: 'SEO Description',
-              name: 'seoDescription',
-              widget: 'text',
+              label: "SEO Description",
+              name: "seoDescription",
+              widget: "text",
               required: false,
             }
           - {
-              label: 'SEO Website Name',
-              name: 'seoWebsiteName',
-              widget: 'string',
+              label: "SEO Website Name",
+              name: "seoWebsiteName",
+              widget: "string",
               required: false,
             }
           - {
-              label: 'SEO Website URL',
-              name: 'seoWebsiteUrl',
-              widget: 'string',
+              label: "SEO Website URL",
+              name: "seoWebsiteUrl",
+              widget: "string",
               required: false,
             }
-          - { label: 'Seo Meta Image', name: 'seoMetaImage', widget: 'image' }
+          - { label: "Seo Meta Image", name: "seoMetaImage", widget: "image" }
           - {
-              label: 'SEO Type',
-              name: 'seoType',
-              widget: 'string',
+              label: "SEO Type",
+              name: "seoType",
+              widget: "string",
               required: false,
             }
           - {
-              label: 'SEO Language',
-              name: 'seoLanguage',
-              widget: 'string',
+              label: "SEO Language",
+              name: "seoLanguage",
+              widget: "string",
               required: false,
             }
-
-  - name: 'blog'
-    label: 'Blog'
-    format: 'json'
-    folder: 'app/content/blog'
+  - label: Blog
+    name: blog
+    format: "json"
     create: true
-    slug: '{{slug}}'
-    sort: 'published_date:desc'
+    slug: "{{slug}}"
+    sort: "published_date:desc"
+    folder: "app/content/blog"
     fields:
-      - {
-          label: 'Preview',
-          name: 'preview',
-          widget: 'object',
-          fields: 
-            - {label: "Title", name: "title", widget: "string",required: false}
-            - {label: "Excerpt", name: "excerpt", widget: "text",required: false}
-            - {label: "Image", name: "image", widget: "image", required: false}
-        }
+      - label: "Preview"
+        name: "preview"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Excerpt", name: "excerpt", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - label: "Title"
+            name: "title"
+            widget: "string"
+      - label: "Page"
+        name: "page"
+        widget: "object"
+        collapsed: true
+        fields:
+          - label: "Author"
+            name: "author"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
 
-      - {
-          label: 'Post Page',
-          name: 'page',
-          widget: 'object',
-          fields:
-            - {
-                label: 'Hero image',
-                name: 'image',
-                widget: 'image',
-                required: false,
-              }
-            - {
-                label: 'Hero text',
-                name: 'text',
-                widget: 'string',
-                required: false,
-              }
-            - {
-                label: 'Hero text color',
-                name: 'color',
-                widget: 'select',
-                options: ["black", "laundrop teal", "laundrop dark teal", "white", "pink"],
-                required: false,
-              }
-            - {
-                label: 'Author Image',
-                name: 'image',
-                widget: 'image',
-                required: false,
-              }
-            - {
-                label: 'Author Min of read',
-                name: 'title',
-                widget: 'string',
-                required: false,
-              }
-            - {
-                label: 'Page Author Name',
-                name: 'name',
-                widget: 'string',
-                required: false,
-              }
-            - {
-                label: 'Published Date',
-                name: 'publishedDate',
-                widget: 'date',
-                format: 'Do MMM YYYY',
-                required: false,
-              }
-            - {
-                label: 'Markdown',
-                name: 'markdown',
-                widget: 'markdown',
-                required: false,
-              }
-            - {
-                label: "Button CTA",
-                name: "button_cta",
-                widget: "object",
-                fields: 
-                  - {label: "Text", name: "btn_text", widget: "string"}
-                  - {label: "Link", name: "btn_link", widget: "string"}
-                  - {label: "Color", name: "btn_color", widget: "select", options: ["black",  "laundrop teal", "laundrop dark teal", "white", "pink"] }
-              }
-            - {
-                label: 'Post SEO Description',
-                name: 'metaDescription',
-                widget: 'string',
-                required: false,
-              }
-            - {
-                label: 'SEO Website Name',
-                name: 'metaWebsiteName',
-                widget: 'string',
-                required: false,
-              }
-            - {
-                label: 'SEO URL',
-                name: 'metaWebsiteUrl',
-                widget: 'string',
-                required: false,
-              }
-            - {
-                label: 'Post SEO Meta Image',
-                name: 'metaImage',
-                widget: 'image',
-                required: false,
-              }
-            - {
-                label: 'Post SEO Type',
-                name: 'metaType',
-                widget: 'string',
-                required: false,
-              }
-            - {
-                label: 'SEO Language',
-                name: 'metaLanguage',
-                widget: 'string',
-                required: false,
-              }
-        }
-        
-         
           
-          
-        
-          
-          
-
-
-
-
-
-      
