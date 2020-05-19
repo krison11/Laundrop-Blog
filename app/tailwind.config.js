@@ -23,6 +23,10 @@ module.exports = {
         black: '#000000',
         light_grey: '#d3d3d323',
         lighter: '#c9c9c9;',
+        primary: "#4DC1C3",
+        secondary: "#2F9291",
+        "ld-pink": "#F6568C",
+        "ld-yellow": "#FFCA41"
       },
       gridTemplateRows: {
         // Simple 8 row grid

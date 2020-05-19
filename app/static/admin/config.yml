@@ -61,124 +61,136 @@ collections:
     slug: '{{slug}}'
     sort: 'published_date:desc'
     fields:
-      - {
+      - label: 'Preview',
+        name: 'preview',
+        widget: 'object',
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Excerpt", name: "excerpt", widget: "text"}
+          - {label: "Image", name: "image", widget: "image"}
+
+      - label: 'Post Page',
+        name: 'page',
+        widget: 'object',
+        fields:
+          - {
           label: 'Post Title',
           name: 'title',
           widget: 'string',
           required: false,
-        }
-      - {
+            }
+          - {
           label: 'Post Excerpt',
           name: 'excerpt',
           widget: 'text',
           required: false,
-        }
-      - { label: 'Post Image', name: 'image', widget: 'image', required: false }
-      - {
+            }
+         - { label: 'Post Image', name: 'image', widget: 'image', required: false }
+         - {
           label: 'Hero image',
           name: 'P_headerImg',
           widget: 'image',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Hero text',
           name: 'P_headerImgText',
           widget: 'string',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Hero text color',
           name: 'P_headerTextColor',
           widget: 'select',
           options: ["black", "laundrop teal", "laundrop dark teal", "white", "pink"],
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Author Image',
           name: 'P_authorImg',
           widget: 'image',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Author Min of read',
           name: 'P_authorTitle',
           widget: 'string',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Page Author Name',
           name: 'P_authorName',
           widget: 'string',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Published Date',
           name: 'publishedDate',
           widget: 'date',
           format: 'Do MMM YYYY',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Page Markdown Title 1',
           name: 'P_markdownTitle1',
           widget: 'string',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Page Markdown 1',
           name: 'P_markdown1',
           widget: 'markdown',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Page Content Image',
           name: 'P_ContentImg',
           widget: 'image',
           required: false,
-        }
-      - label: "Button CTA"
-        name: "button_cta"
-        widget: "object"
-        fields: 
-          - {label: "Text", name: "btn_text", widget: "string"}
-          - {label: "Link", name: "btn_link", widget: "string"}
-          - {label: "Color", name: "btn_color", widget: "select", options: ["black", "laundrop teal", "laundrop dark teal", "white", "pink"] }
-      - {
+           }
+         - label: "Button CTA"
+           name: "button_cta"
+           widget: "object"
+           fields: 
+             - {label: "Text", name: "btn_text", widget: "string"}
+             - {label: "Link", name: "btn_link", widget: "string"}
+             - {label: "Color", name: "btn_color", widget: "select", options: ["black",  "laundrop teal", "laundrop dark teal", "white", "pink"] }
+         - {
           label: 'Post SEO Description',
           name: 'seoDescription',
           widget: 'string',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'SEO Website Name',
           name: 'seoWebsiteName',
           widget: 'string',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'SEO URL',
           name: 'seoWebsiteUrl',
           widget: 'string',
           required: false,
-          }
-      - {
+           }
+         - {
           label: 'Post SEO Meta Image',
           name: 'seoMetaImage',
           widget: 'image',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'Post SEO Type',
           name: 'seoType',
           widget: 'string',
           required: false,
-        }
-      - {
+           }
+         - {
           label: 'SEO Language',
           name: 'seoLanguage',
           widget: 'string',
           required: false,
-        }
+           }
         
          
           
@@ -188,3 +200,7 @@ collections:
           
 
 
+
+
+
+      
