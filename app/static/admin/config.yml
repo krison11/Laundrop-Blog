@@ -80,19 +80,19 @@ collections:
             fields: 
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Text", name: "text", widget: "string", required: false }
-              - { 
-                  label: "Color",
-                  name: "color",
-                  widget: "select",
-                  default: "bg-secondary",
-                  options:
-                    - { label: "Black", value: "bg-black" }
-                    - { label: "White", value: "bg-white" }
-                    - { label: "Pink", value: "bg-ld-pink" } 
-                    - { label: "Yellow", value: "bg-ld-yellow" } 
-                    - { label: "Primary", value: "bg-primary" } 
-                    - { label: "Secondary", value: "bg-secondary" }, required: false
-                }
+              # - { 
+              #     label: "Color",
+              #     name: "color",
+              #     widget: "select",
+              #     default: "bg-secondary",
+              #     options:
+              #       - { label: "Black", value: "bg-black" }
+              #       - { label: "White", value: "bg-white" }
+              #       - { label: "Pink", value: "bg-ld-pink" } 
+              #       - { label: "Yellow", value: "bg-ld-yellow" } 
+              #       - { label: "Primary", value: "bg-primary" } 
+              #       - { label: "Secondary", value: "bg-secondary" }, required: false
+              #   }
           - label: "Author"
             name: "author"
             widget: "object"
@@ -118,15 +118,15 @@ collections:
             fields: 
               - { label: "Text", name: "text", widget: "string" }
               - { label: "Link", name: "link", widget: "string" }
-              - { label: "Color",
-                  name: "color", 
-                  widget: "select",
-                  options:
-                    - { label: "Black", value: "bg-black" }
-                    - { label: "Pink", value: "bg-ld-pink" } 
-                    - { label: "Primary", value: "bg-primary" } 
-                    - { label: "Secondary", value: "bg-secondary" }, required: false 
-                }
+              # - { label: "Color",
+              #     name: "color", 
+              #     widget: "select",
+              #     options:
+              #       - { label: "Black", value: "bg-black" }
+              #       - { label: "Pink", value: "bg-ld-pink" } 
+              #       - { label: "Primary", value: "bg-primary" } 
+              #       - { label: "Secondary", value: "bg-secondary" }, required: false 
+              #   }
           - label: "Seo"
             name: "seo"
             widget: "object"
