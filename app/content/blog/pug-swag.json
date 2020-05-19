@@ -1,5 +1,10 @@
 {
   "excerpt": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil libero temporibus dolores eligendi, nobis quidem? Aspernatur earum neque exercitationem et mollitia excepturi sunt accusantium hic iusto. Unde dolore delectus blanditiis?",
+  "button_cta": {
+    "btn_color": "laundrop teal",
+    "btn_text": "adasd",
+    "btn_link": "asdasdasd"
+  },
   "P_authorName": "Per-Ola",
   "P_ContentImgText": "",
   "P_headerImg": "https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1035&q=80",
