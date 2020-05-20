@@ -103,7 +103,7 @@ import MetaInfo from "vue-meta";
 })
 export default class BlogPost extends Vue {
   post: Post = this.$store.state.posts.find(
-    (post: Post) => post.slug === this.params()
+    (post: Post) => post.preview.title === this.params()
   );
   params() {
     return this.$route.params.slug;
