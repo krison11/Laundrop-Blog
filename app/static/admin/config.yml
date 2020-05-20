@@ -59,7 +59,7 @@ collections:
     name: blog
     format: "json"
     create: true
-    slug: "{{slug}}"
+    slug: "{slug}"
     sort: "published_date:desc"
     folder: "app/content/blog"
     editor:
