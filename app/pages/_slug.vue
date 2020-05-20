@@ -106,7 +106,7 @@ export default class BlogPost extends Vue {
     (post: Post) => post.preview.title === this.params()
   );
   params() {
-    return this.$route.params.title;
+    return this.$route.params.slug;
   }
 
   // getColor(color) {
