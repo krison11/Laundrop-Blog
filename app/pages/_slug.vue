@@ -60,12 +60,12 @@ import MetaInfo from "vue-meta";
   },
   head(): MetaInfo {
     return {
-      title: this.post.preview.title,
+      title: this.post.title,
       meta: [
         {
           hid: "og:title",
           name: "og:title",
-          content: this.post.preview.title
+          content: this.post.title
         },
         {
           hid: "og:description",

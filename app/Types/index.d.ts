@@ -4,12 +4,6 @@ declare global {
   }
 }
 
-interface Preview {
-  title: string;
-  excerpt: string;
-  image: string;
-}
-
 interface Hero {
   image: string;
   text: string;
@@ -46,9 +40,11 @@ interface Page {
 }
 
 interface Post {
-  preview: Preview;
-  page: Page;
+  title: string;
+  excerpt: string;
+  image: string;
   slug: string;
+  page: Page;
 }
 
 

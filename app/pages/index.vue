@@ -5,14 +5,11 @@
       <div v-for="(post, i) in posts" :key="i" class="w-full md:w-1/2 my-4 md:px-4">
         <div class="post">
           <nuxt-link :to="`/${post.slug}`">
-            <img
-              class="w-full"
-              :src="post.preview.image || 'https://source.unsplash.com/random/640x340'"
-            />
+            <img class="w-full" :src="post.image || 'https://source.unsplash.com/random/640x340'" />
             <div class="p-6 bg-white">
-              <h2 class="text-2xl mb-2">{{ post.preview.title }}</h2>
+              <h2 class="text-2xl mb-2">{{ post.title }}</h2>
 
-              <p class="text-base font-light">{{ post.preview.excerpt }}</p>
+              <p class="text-base font-light">{{ post.excerpt }}</p>
 
               <h6 class="text-blue-600 mt-4 font-medium">Read more</h6>
             </div>
