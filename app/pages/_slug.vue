@@ -108,21 +108,6 @@ export default class BlogPost extends Vue {
   params() {
     return this.$route.params.slug;
   }
-  // post!: Post;
-
-  // async asyncData({ params, payload }): Promise<{ post: Post }> {
-  //   if (payload) {
-  //     return { post: payload };
-  //   }
-  //   try {
-  //     const post = require(`@/content/blog/${params.slug}.json`);
-  //     return {
-  //       post
-  //     };
-  //   } catch (e) {
-  //     throw new Error("Not found");
-  //   }
-  // }
 }
 </script>
 

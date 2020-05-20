@@ -66,9 +66,9 @@ collections:
     editor:
       preview: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Excerpt", name: "excerpt", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Preview Image", name: "image", widget: "image" }
+      - { label: ""Preview Title", name: "title", widget: "string" }
+      - { label: ""Preview Excerpt", name: "excerpt", widget: "string" }
       - label: "Page"
         name: "page"
         widget: "object"
