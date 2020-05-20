@@ -39,7 +39,7 @@
         class="text-lg markdown container px-3 md:px-0"
         v-lazy-load="$md.render(post.page.markdown)"
       />
-      <div class="w-full text-center">
+      <div class="w-full text-center py-24">
         <a
           :class="`${post.page.button.color} my-20 self-center shadow-xl text-xl rounded-full px-6 py-2 uppercase`"
           :href="post.page.button.link"
