@@ -68,8 +68,8 @@ collections:
       - label: "Preview"
         name: "preview"
         widget: "object"
-        slug: '{{slug}}-{{day}}-{{month}}-{{year}}'
         collapsed: true
+        slug: '{{slug}}-{{day}}-{{month}}-{{year}}'
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Excerpt", name: "excerpt", widget: "string" }
