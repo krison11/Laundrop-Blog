@@ -62,7 +62,7 @@ collections:
     create: true
     sort: "published_date:desc"
     folder: "app/content/blog"
-    slug: '{{slug}}-{{day}}-{{month}}-{{year}}' 
+    slug: "{{slug}}"
     editor:
       preview: true
     fields:
