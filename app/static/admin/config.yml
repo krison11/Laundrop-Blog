@@ -65,7 +65,7 @@ collections:
     editor:
       preview: true
     fields:
-      - label: "Slug out"
+      - label: "Slug (Page URL)"
         name: "slug"
         widget: "string"
 
