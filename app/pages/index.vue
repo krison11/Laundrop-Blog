@@ -4,7 +4,7 @@
     <div class="flex flex-wrap md:-mx-4 pb-20">
       <div v-for="(post, i) in posts" :key="i" class="w-full md:w-1/2 my-4 md:px-4">
         <div class="post">
-          <nuxt-link :to="`/${post.slug}`">
+          <nuxt-link :to="`/${post.preview.title}`">
             <img
               class="w-full"
               :src="post.preview.image || 'https://source.unsplash.com/random/640x340'"

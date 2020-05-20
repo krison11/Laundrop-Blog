@@ -65,10 +65,6 @@ collections:
     editor:
       preview: true
     fields:
-      - label: "Slug (Page URL)"
-        name: "slug"
-        widget: "string"
-
       - label: "Preview"
         name: "preview"
         widget: "object"

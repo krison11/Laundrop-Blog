@@ -48,7 +48,6 @@ interface Page {
 interface Post {
   preview: Preview;
   page: Page;
-  slug: string;
 }
 
 
