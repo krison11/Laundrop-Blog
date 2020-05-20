@@ -55,11 +55,11 @@ collections:
               widget: "string",
               required: false
             }
+
   - label: Blog
     name: blog
     format: "json"
     create: true
-    slug: "{{slug}}"
     sort: "published_date:desc"
     folder: "app/content/blog"
     editor:
@@ -68,6 +68,7 @@ collections:
       - label: "Preview"
         name: "preview"
         widget: "object"
+        slug: '{{slug}}-{{day}}-{{month}}-{{year}}'
         collapsed: true
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -97,8 +98,7 @@ collections:
                   - { label: "Yellow", value: "text-ld-yellow" } 
                   - { label: "Primary", value: "text-primary" } 
                   - { label: "Secondary", value: "text-secondary" }
-                
-            
+
           - label: "Author"
             name: "author"
             widget: "object"

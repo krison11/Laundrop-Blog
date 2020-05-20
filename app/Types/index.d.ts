@@ -8,6 +8,7 @@ interface Preview {
   title: string;
   excerpt: string;
   image: string;
+  slug: string;
 }
 
 interface Hero {
