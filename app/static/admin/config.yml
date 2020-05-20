@@ -62,18 +62,13 @@ collections:
     create: true
     sort: "published_date:desc"
     folder: "app/content/blog"
+    slug: '{{slug}}-{{day}}-{{month}}-{{year}}' 
     editor:
       preview: true
     fields:
-      - label: "Preview"
-        name: "preview"
-        widget: "object"
-        collapsed: true
-        slug: '{{slug}}-{{day}}-{{month}}-{{year}}'
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Excerpt", name: "excerpt", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
       - label: "Page"
         name: "page"
         widget: "object"
