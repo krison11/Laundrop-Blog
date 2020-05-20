@@ -67,8 +67,8 @@ collections:
       preview: true
     fields:
       - { label: "Preview Image", name: "image", widget: "image" }
-      - { label: ""Preview Title", name: "title", widget: "string" }
-      - { label: ""Preview Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Preview Title", name: "title", widget: "string" }
+      - { label: "Preview Excerpt", name: "excerpt", widget: "string" }
       - label: "Page"
         name: "page"
         widget: "object"
