@@ -107,9 +107,9 @@ collections:
                   widget: "datetime", 
                   default: "DD MMM YYYY",
                   dateFormat: "DD MMM YYYY", 
-                  timeFormat: "HH:mm", 
+                  # timeFormat: "HH:mm", 
                   # format: "LLL",
-                  pickerUtc: true,
+                  pickerUtc: false,
                   required: false 
                 }
 
