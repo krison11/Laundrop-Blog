@@ -1,6 +1,6 @@
 {
   "preview": {
-    "title": "Svåra fläckar på mattan",
+    "title": "hello",
     "excerpt": "Vin, choklad och mat – sådana fläckar på matten är riktigt jobbiga.  Hur får man bort dem på bästa sätt?  Här ser du vad som verkligen funkar!",
     "image": "/images/uploads/carpet.jpg",
     "slug": "slug in"
@@ -27,5 +27,8 @@
       "metaImage": "/images/uploads/laundrop.jpeg"
     }
   },
-  "slug": "slug out"
+  "slug": "slug out",
+  "title": "sdfgh",
+  "excerpt": "serdtfygh",
+  "image": "/images/uploads/guy.jpeg"
 }
