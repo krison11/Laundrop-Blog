@@ -65,8 +65,8 @@ collections:
     editor:
       preview: true
     fields:
-      - label: "Slug out",
-        name: "slug",
+      - label: "Slug out"
+        name: "slug"
         widget: "string"
 
       - label: "Preview"
