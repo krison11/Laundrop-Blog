@@ -28,16 +28,6 @@ module.exports = {
         "ld-pink": "#F6568C",
         "ld-yellow": "#FFCA41"
       },
-      gridTemplateRows: {
-        // Simple 8 row grid
-        '9': 'repeat(9, minmax(0, 1fr))',
-      },
-      gridRow: {
-        'span-9': 'span 9 / span 9',
-      },
-      letterSpacing: {
-        widest: '.2em'
-      }
     },
   },
   purge: false,

@@ -5,38 +5,38 @@
         class="header-img h-auto bg-fixed bg-left-top bg-cover bg-center"
         :lazy-background="post.page.hero.image"
       >
-        <div class="container h-full flex items-center px-2">
-          <div class="header-img-text w-full w-2/3 md:w-1/2">
+        <div class="container h-full flex items-center px-3 md:px-0">
+          <div class="header-img-text w-full lg:w-1/2 max-w-sm md:max-w-md lg:max-w-lg xl:mx-w-xl">
             <h1
-              class="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-image_text uppercase font-bold tracking-wide"
+              class="text-4xl md:text-5xl text-md lg:text-6xl text-image_text uppercase font-bold tracking-wide"
             >{{ post.page.hero.text }}</h1>
-            <p class="text-sm sm:text-xl text-bg-grey">By Laundrop</p>
+            <p class="text-xl md:text-2xl lg:text-3xl text-bg-grey">By Laundrop</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="bg-image_text">
-      <div class="flex items-center row-span-2 p-3 container px-2">
+      <div class="flex items-center container py-1 px-3 md:px-0">
         <div
-          class="author-img h-16 w-16 bg-center bg-cover rounded-full mr-4"
+          class="author-img h-24 w-24 bg-center bg-cover rounded-full mr-4"
           :lazy-background="post.page.author.image"
         ></div>
 
         <div class="author-text text-white">
-          <p class>{{ post.page.author.text }}</p>
+          <p class>{{ post.page.author.title }}</p>
           <p>
-            {{ post.publishedDate }} ·
-            <i class>{{ post.page.author.publishedDate }}</i>
+            {{ post.page.author.name }} ·
+            <i class>{{ post.page.author.publishDate }}</i>
           </p>
         </div>
       </div>
     </section>
 
-    <section class="container px-2">
+    <section class="container">
       <div
         v-if="post.page.markdown"
-        class="text-lg markdown container"
+        class="text-lg markdown container px-3 md:px-0"
         v-lazy-load="$md.render(post.page.markdown)"
       />
       <div class="w-full text-center">
@@ -112,8 +112,7 @@ export default class BlogPost extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.header-img,
-.content-img {
+.header-img {
   height: 60vh;
 }
 </style>

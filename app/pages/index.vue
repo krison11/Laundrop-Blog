@@ -2,7 +2,7 @@
   <section class="blog m-10">
     <!-- posts -->
     <div class="flex flex-wrap md:-mx-4 pb-20">
-      <div v-for="(post, i) in posts" :key="i" class="w-full md:w-1/2 my-4 md:px-4">
+      <div v-for="(post, i) in posts" :key="i" class="w-full h- md:w-1/2 my-4 md:px-4">
         <div class="post">
           <nuxt-link :to="`/${post.slug}`">
             <img class="w-full" :src="post.image || 'https://source.unsplash.com/random/640x340'" />

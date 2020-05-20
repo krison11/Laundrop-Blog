@@ -105,10 +105,10 @@ collections:
               - { label: "Published Date",
                   name: "publishDate",
                   widget: "datetime", 
-                  default: "Do MMM YYYY",
-                  dateFormat: "Do MMM YYYY", 
+                  default: "DDD MMM YYYY",
+                  dateFormat: "DDD MMM YYYY", 
                   timeFormat: "HH:mm", 
-                  format: "LLL",
+                  # format: "LLL",
                   pickerUtc: true,
                   required: false 
                 }
