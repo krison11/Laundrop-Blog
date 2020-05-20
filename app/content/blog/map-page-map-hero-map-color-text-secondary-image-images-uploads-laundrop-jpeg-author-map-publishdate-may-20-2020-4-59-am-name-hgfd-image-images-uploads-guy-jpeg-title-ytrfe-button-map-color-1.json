@@ -1,0 +1,25 @@
+{
+  "page": {
+    "hero": {
+      "color": "text-secondary",
+      "image": "/images/uploads/laundrop.jpeg"
+    },
+    "author": {
+      "publishDate": "May 20, 2020 4:59 AM",
+      "name": "hgfd",
+      "image": "/images/uploads/guy.jpeg",
+      "title": "ytrfe"
+    },
+    "button": {
+      "color": "bg-ld-pink text-white",
+      "text": "uytrfds",
+      "link": "ytrfe"
+    },
+    "markdown": "uytrfcds"
+  },
+  "preview": {
+    "title": "krison",
+    "excerpt": "fdghj",
+    "image": "/images/uploads/miriam-espacio-h_a57gkwimi-unsplash.jpg"
+  }
+}
