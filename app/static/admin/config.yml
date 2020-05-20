@@ -59,18 +59,19 @@ collections:
     name: blog
     format: "json"
     create: true
-    slug: "{slug}"
+    slug: "{{{slug}}}"
     sort: "published_date:desc"
     folder: "app/content/blog"
     editor:
       preview: true
     fields:
-      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Slug out", name: "slug", widget: "string" }
       - label: "Preview"
         name: "preview"
         widget: "object"
         collapsed: true
         fields:
+          - { label: "Slug in", name: "slug", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Excerpt", name: "excerpt", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
