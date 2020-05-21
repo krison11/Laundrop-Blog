@@ -7,34 +7,48 @@
 module.exports = {
   theme: {
     container: {
-      center: true
+      center: true,
     },
     extend: {
+      height: {
+        "1/2": "calc(50vh)",
+        "1/3": "calc(33vh)",
+        "2/3": "calc(66vh)",
+        "1/1": "calc(100vh)",
+      },
       colors: {
-        navbar: '#4DC1C3',
-        nav_lighter: '#52cbcd9c',
-        footer: '#103E3D',
-        image_text: '#2F9291',
-        button: '#F6568C',
-        yellow: '#FFCA41',
-        white: '#FFFFFF',
-        grey: ' #2d3748',
-        darker: '#00000058',
-        black: '#000000',
-        light_grey: '#d3d3d323',
-        lighter: '#c9c9c9;',
+        navbar: "#4DC1C3",
+        nav_lighter: "#52cbcd9c",
+        footer: "#103E3D",
+        image_text: "#2F9291",
+        button: "#F6568C",
+        yellow: "#FFCA41",
+        white: "#FFFFFF",
+        grey: " #2d3748",
+        darker: "#00000058",
+        black: "#000000",
+        light_grey: "#d3d3d323",
+        lighter: "#c9c9c9;",
         primary: "#4DC1C3",
         secondary: "#2F9291",
         "ld-pink": "#F6568C",
-        "ld-yellow": "#FFCA41"
+        "ld-yellow": "#FFCA41",
       },
+      fontSize: (theme) => ({
+        "5xl": "40px",
+        "6xl": "52px",
+        "7xl": "60px",
+        "8xl": "70px",
+        "9xl": "90px",
+        "10xl": "110px",
+      }),
     },
   },
   purge: false,
   plugins: [
     // ...
-    require('tailwindcss'),
-    require('autoprefixer'),
+    require("tailwindcss"),
+    require("autoprefixer"),
     // ...
-  ]
+  ],
 };

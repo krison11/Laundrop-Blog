@@ -2,7 +2,7 @@
   <main :class="$route.name">
     <SiteNav />
     <nuxt class="nuxt" />
-    <SiteFooter />
+    <SiteFooter class="mt-12" />
   </main>
 </template>
 
