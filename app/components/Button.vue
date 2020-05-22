@@ -1,7 +1,7 @@
 <template>
   <div :class="`btn text-${color}`">
-    <a class="text" :href="url" target="_blank">
-      <div :class="color" class="slot">{{btnText}}</div>
+    <a class="btn-link" :href="url" target="_blank">
+      <div :class="`${color} text-${color}`" class="slot">{{btnText}}</div>
       <span :class="`span bg-${color}`"></span>
       <div class="icon-parent">
         <div class="icon">
@@ -100,7 +100,7 @@ export default class Button extends Vue {
   transition: all 0.3s ease;
 }
 
-.text {
+.btn-link {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,7 +114,7 @@ export default class Button extends Vue {
   height: 100%;
   z-index: 0;
 }
-.text:hover .span {
+.btn-link :hover .span {
   height: 100%;
   width: 100%;
   opacity: 1;
@@ -169,14 +169,18 @@ export default class Button extends Vue {
 
 .primary {
   text-decoration-color: #4dc1c3;
+  color: hsl(181, 50%, 53%);
 }
 .secondary {
   text-decoration-color: #2f9291;
+  color: hsl(179, 51%, 38%);
 }
 .ld-pink {
   text-decoration-color: #f6568c;
+  color: hsl(340, 90%, 65%);
 }
 .black {
   text-decoration-color: #000000;
+  color: hsl(0, 0%, 0%);
 }
 </style>
