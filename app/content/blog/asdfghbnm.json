@@ -1,0 +1,24 @@
+{
+  "page": {
+    "hero": {
+      "color": "text-primary",
+      "image": "/images/uploads/woman.jpeg",
+      "text": "sadfcvbn"
+    },
+    "author": {
+      "publishDate": "2020-05-22T06:25:48.325Z",
+      "name": "sadfghb",
+      "image": "/images/uploads/guy.jpeg",
+      "title": "5 min read"
+    },
+    "button": {
+      "color": "secondary",
+      "text": "sadfgh",
+      "link": "https//:www.laundrop.com"
+    },
+    "markdown": "wertyuh"
+  },
+  "image": "/images/uploads/coffee.jpeg",
+  "title": "asdfghbnm",
+  "excerpt": "sdfghjk,"
+}
