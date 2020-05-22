@@ -1,5 +1,5 @@
 <template>
-  <div class="btn">
+  <div :class="`btn text-${color}`">
     <a class="text" :href="url" target="_blank">
       <div :class="`slot text-${color}`">{{btnText}}</div>
       <span :class="`span bg-${color}`"></span>
@@ -11,9 +11,11 @@
         </div>
       </div>
     </a>
+    <div
+      class="btn-shadow absolute m-auto mt-20 width-full heigh-0 rounded-full transition-all ease-in"
+    ></div>
   </div>
 </template>
-
 <script lang="ts">
 import Vue from "vue";
 import { Component, Prop } from "vue-property-decorator";
@@ -42,7 +44,7 @@ export default class Button extends Vue {
   right: 0;
   transform: rotate(22deg);
   margin-top: -7px;
-  margin-right: -36px;
+  margin-right: -70px;
 }
 .b {
   width: 70px;
@@ -50,7 +52,7 @@ export default class Button extends Vue {
 }
 .c {
   width: 40px;
-  margin-left: 17px;
+  margin-left: 30px;
   margin-top: 7px;
   transform: rotate(-22deg);
 }
@@ -59,26 +61,49 @@ export default class Button extends Vue {
   margin-left: 0;
   opacity: 0;
 }
+.btn:hover .btn-shadow {
+  height: 20px;
+  width: 100%;
+  background-image: radial-gradient(
+    rgb(211, 211, 211),
+    rgba(211, 211, 211, 0.883),
+    rgba(211, 211, 211, 0.712),
+    rgba(211, 211, 211, 0.37),
+    rgba(255, 255, 255, 0.486),
+    rgba(255, 255, 255, 0.609),
+    rgba(255, 255, 255, 0.87),
+    rgb(255, 255, 255)
+  );
+}
 
 .btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
   margin: auto;
-}
-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+// div {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   -webkit-box-pack: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+//   -webkit-transition: all 0.3s ease;
+//   -moz-transition: all 0.3s ease;
+//   -o-transition: all 0.3s ease;
+//   transition: all 0.3s ease;
+// }
 
 .text {
   position: relative;
@@ -117,6 +142,7 @@ div {
     z-index: 1;
   }
   &:hover .span {
+    border-radius: 200px;
     height: 100%;
     width: 100%;
     opacity: 1;
