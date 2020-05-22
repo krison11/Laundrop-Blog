@@ -5,7 +5,7 @@
         <slot :class="`text-${color}`"></slot>
       </div>
       <span :class="`span bg-${color}`"></span>
-      <div class="icon-pare nt">
+      <div class="icon-parent">
         <div class="icon">
           <span :class="`a bg-${color}`"></span>
           <span :class="`b bg-${color}`"></span>
@@ -158,17 +158,4 @@ div {
     margin-left: 20px;
   }
 }
-
-// .primary:hover .span {
-//   @apply bg-primary;
-// }
-// .secondary:hover .span {
-//   @apply bg-secondary;
-// }
-// .ld-pink:hover .span {
-//   @apply bg-ld-pink;
-// }
-// .black:hover .span {
-//   @apply bg-black;
-// }
 </style>
