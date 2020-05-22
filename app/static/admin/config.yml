@@ -140,16 +140,22 @@ collections:
             collapsed: true
             fields:
               - { label: "Website name", name: "metaWebsiteName", widget: "string",
-            required: false }
+                  required: false 
+                }
               - { label: "Website Url", name: "metaWebsiteUrl", widget: "string",
-            required: false }
+                  required: false 
+                }
               - { label: "Description", name: "metaDescription", widget: "text",
-            required: false }
+                  required: false 
+                }
               - { label: "Image", name: "metaImage", widget: "image",
-            required: false }
+                  required: false 
+                }
               - { label: "Type Article/Website?", name: "metaType", widget: "text",
-            required: false }
+                  required: false 
+                }
               - { label: "Language", name: "metaLanguage", widget: "text",
-            required: false }
+                  required: false 
+                }
 
           
