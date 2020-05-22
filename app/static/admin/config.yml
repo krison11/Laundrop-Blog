@@ -19,41 +19,36 @@ collections:
         name: meta
         format: json
         file: "app/content/metaContent/meta.json"
+        required: false
         fields:
           - { label: "Seo Title", name: "seoTitle", widget: "string" }
           - {
               label: "SEO Description",
               name: "seoDescription",
-              widget: "text",
-              required: false,
+              widget: "text"
             }
           - {
               label: "SEO Website Name",
               name: "seoWebsiteName",
-              widget: "string",
-              required: false
+              widget: "string"
             }
           - {
               label: "SEO Website URL",
               name: "seoWebsiteUrl",
-              widget: "string",
-              required: false
+              widget: "string"
             }
           - { label: "Seo Meta Image",
               name: "seoMetaImage",
-              widget: "image",
-              required: false }
+              widget: "image" }
           - {
               label: "SEO Type",
               name: "seoType",
-              widget: "string",
-              required: false
+              widget: "string"
             }
           - {
               label: "SEO Language",
               name: "seoLanguage",
-              widget: "string",
-              required: false
+              widget: "string"
             }
 
   - label: Blog
@@ -101,7 +96,7 @@ collections:
             fields: 
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
-              - { label: "Minutes Of Read", name: "title", widget: "string", required: false }
+              - { label: "Minutes Of Read", name: "title", widget: "string"}
               - label: "Published Date"
                 name: "publishDate"
                 widget: "datetime"
@@ -110,8 +105,6 @@ collections:
                 timeFormat: "HH:mm"
                 format: "LLL"
                 pickerUtc: false
-                required: false 
-                
 
           - label: "Markdown"
             name: "markdown"
@@ -129,7 +122,6 @@ collections:
                 name: "color" 
                 widget: "select"
                 default: "ld-pink"
-                required: false
                 options:
                   - { label: "Black", value: "black" }
                   - { label: "Pink", value: "ld-pink" } 
@@ -140,12 +132,13 @@ collections:
             name: "seo"
             widget: "object"
             collapsed: true
+            required: false
             fields:
-              - { label: "Website name", name: "metaWebsiteName", widget: "string", required: false }
-              - { label: "Website Url", name: "metaWebsiteUrl", widget: "string", required: false }
-              - { label: "Description", name: "metaDescription", widget: "text", required: false }
-              - { label: "Image", name: "metaImage", widget: "image", required: false }
-              - { label: "Type Article/Website?", name: "metaType", widget: "text", required: false }
-              - { label: "Language", name: "metaLanguage", widget: "text", required: false }
+              - { label: "Website name", name: "metaWebsiteName", widget: "string" }
+              - { label: "Website Url", name: "metaWebsiteUrl", widget: "string" }
+              - { label: "Description", name: "metaDescription", widget: "text" }
+              - { label: "Image", name: "metaImage", widget: "image" }
+              - { label: "Type Article/Website?", name: "metaType", widget: "text" }
+              - { label: "Language", name: "metaLanguage", widget: "text" }
 
           
