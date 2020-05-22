@@ -102,13 +102,16 @@ collections:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Minutes Of Read", name: "title", widget: "string", required: false }
-              - { label: "Published Date",
-                  name: "publishDate",
-                  widget: "datetime", 
-                  default: "DD MMM YYYY",
-                  dateFormat: "DD MMM YYYY",
-                  required: false 
-                }
+              - label: "Published Date"
+                name: "publishDate"
+                widget: "datetime"
+                default: "DD MMM YYYY"
+                dateFormat: "DD MMM YYYY"
+                timeFormat: "HH:mm"
+                format: "LLL"
+                pickerUtc: false
+                required: false 
+                
 
           - label: "Markdown"
             name: "markdown"

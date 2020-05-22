@@ -59,6 +59,15 @@
         >{{post.page.button.text}}</a>
       </div>
     </section>
+    <section>
+      {{post.title}}
+      {{post.page.seo.metaDescription}}
+      {{post.page.seo.metaWebsiteName}}
+      {{post.page.seo.metaWebsiteUrl}}
+      {{post.page.seo.metaImage}}
+      {{page.seo.metaType}}
+      {{post.page.seo.metaLanguage}}
+    </section>
   </article>
 </template>
 
@@ -71,6 +80,19 @@ import Button from "../components/Button.vue";
   components: { Button },
   transition() {
     return "slide-left";
+  },
+  async asyncData({ params, payload }): Promise<{ post: Post }> {
+    if (payload) {
+      return { post: payload };
+    }
+    try {
+      const post = require(`@/content/blog/${params.slug}.json`);
+      return {
+        post
+      };
+    } catch (e) {
+      throw new Error("Not found");
+    }
   },
   head(): MetaInfo {
     return {
@@ -116,13 +138,14 @@ import Button from "../components/Button.vue";
   }
 })
 export default class BlogPost extends Vue {
-  post: Post = this.$store.state.posts.find(
-    (post: Post) => post.slug === this.params()
-  );
-  link: string = "www.laundrop.se";
-  params() {
-    return this.$route.params.slug;
-  }
+  // post: Post = this.$store.state.posts.find(
+  //   (post: Post) => post.slug === this.params()
+  // );
+  // link: string = "www.laundrop.se";
+  // params() {
+  //   return this.$route.params.slug;
+  // }
+  post!: Post;
 }
 </script>
 
