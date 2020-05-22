@@ -8,27 +8,23 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import SiteFooter from "../components/SiteFooter.vue";
-import SiteNav from "../components/SiteNav.vue";
+import SiteFooter from "../components/Footer/SiteFooter.vue";
+import SiteNav from "../components/Navbar/SiteNav.vue";
 @Component({
   components: {
     SiteNav,
-    SiteFooter,
-  },
+    SiteFooter
+  }
 })
 export default class DefaultLayout extends Vue {}
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
 body {
   @apply antialiased;
   @apply subpixel-antialiased;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 .page-enter-active,

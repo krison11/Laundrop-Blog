@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-footer text-white text-3xl flex justify-center items-center">
+  <footer class="bg-secondary-dark text-white text-3xl flex justify-center items-center">
     <div v-if="$route.name==='slug'">This Is Page Footer</div>
     <div v-else>This Is Index Footer</div>
   </footer>

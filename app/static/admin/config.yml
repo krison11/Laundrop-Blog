@@ -106,10 +106,7 @@ collections:
                   name: "publishDate",
                   widget: "datetime", 
                   default: "DD MMM YYYY",
-                  dateFormat: "DD MMM YYYY", 
-                  # timeFormat: "HH:mm", 
-                  # format: "LLL",
-                  pickerUtc: false,
+                  dateFormat: "DD MMM YYYY",
                   required: false 
                 }
 
@@ -128,13 +125,13 @@ collections:
               - label: "Color"
                 name: "color" 
                 widget: "select"
-                default: "bg-ld-pink text-white"
+                default: "ld-pink"
                 required: false
                 options:
-                  - { label: "Black", value: "bg-black text-white" }
-                  - { label: "Pink", value: "bg-ld-pink text-white" } 
-                  - { label: "Primary", value: "bg-primary text-white" } 
-                  - { label: "Secondary", value: "bg-secondary text-white" } 
+                  - { label: "Black", value: "black" }
+                  - { label: "Pink", value: "ld-pink" } 
+                  - { label: "Primary", value: "primary" } 
+                  - { label: "Secondary", value: "secondary" } 
                     
           - label: "Seo"
             name: "seo"

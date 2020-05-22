@@ -21,7 +21,7 @@
     "button": {
       "text": "boka kämtvätt",
       "link": "www.laundrop.se",
-      "color": "bg-primary text-white"
+      "color": "primary"
     },
     "seo": {
       "metaImage": "/images/uploads/laundrop.jpeg"

@@ -11,30 +11,30 @@ module.exports = {
     },
     extend: {
       colors: {
-        navbar: '#4DC1C3',
-        nav_lighter: '#52cbcd9c',
-        footer: '#103E3D',
-        image_text: '#2F9291',
-        button: '#F6568C',
-        yellow: '#FFCA41',
-        white: '#FFFFFF',
-        grey: ' #2d3748',
-        darker: '#00000058',
-        black: '#000000',
-        light_grey: '#d3d3d323',
-        lighter: '#c9c9c9;',
-        primary: "#4DC1C3",
-        secondary: "#2F9291",
+        "primary": "#4DC1C3",
+        "primary-light": '#52cbcd9c',
+        "secondary": "#2F9291",
+        "secondary-dark": "#103E3D",
         "ld-pink": "#F6568C",
-        "ld-yellow": "#FFCA41"
+        "ld-yellow": "#FFCA41",
+        "grey": ' #2d3748',
+        "darker": '#00000058',
+        "light_grey": '#d3d3d323',
+        "lighter": '#c9c9c9;'
       },
+      height: {
+        "35rem": "35rem",
+        "30rem": "30rem",
+        "25rem": "25rem",
+        "20rem": "20rem",
+      }
     },
   },
-  purge: false,
+  // purge: false,
   plugins: [
     // ...
     require('tailwindcss'),
     require('autoprefixer'),
     // ...
-  ]
+  ],
 };

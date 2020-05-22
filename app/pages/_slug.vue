@@ -8,7 +8,8 @@
         <div class="container h-full flex items-center px-3 md:px-0">
           <div class="header-img-text w-full lg:w-1/2 max-w-sm md:max-w-md lg:max-w-lg xl:mx-w-xl">
             <h1
-              class="text-4xl md:text-5xl text-md lg:text-6xl text-image_text uppercase font-bold tracking-wide"
+              :class="post.page.hero.color"
+              class="text-4xl md:text-5xl text-md lg:text-6xl uppercase font-bold tracking-wide"
             >{{ post.page.hero.text }}</h1>
             <p class="text-xl md:text-2xl lg:text-3xl text-bg-grey">By Laundrop</p>
           </div>
@@ -16,7 +17,7 @@
       </div>
     </section>
 
-    <section class="bg-image_text">
+    <section class="bg-secondary">
       <div class="flex items-center container py-1 px-3 md:px-0">
         <div
           class="author-img h-24 w-24 bg-center bg-cover rounded-full mr-4"
@@ -25,10 +26,11 @@
 
         <div class="author-text text-white">
           <p class>{{ post.page.author.title }}</p>
-          <p>
-            {{ post.page.author.name }} ·
+          <div class="md:flex items-center">
+            <p>{{ post.page.author.name }}</p>
+            <i class="px-1 hidden md:block">•</i>
             <i class>{{ post.page.author.publishDate }}</i>
-          </p>
+          </div>
         </div>
       </div>
     </section>
@@ -39,12 +41,21 @@
         class="text-lg markdown container px-3 md:px-0"
         v-lazy-load="$md.render(post.page.markdown)"
       />
-      <div class="w-full text-center py-24">
+    </section>
+    <section class="w-full relative text-center py-20 md:py-24">
+      <div class="hidden md:block">
+        <Button
+          :url="post.page.button.link"
+          :color="post.page.button.color"
+        >{{post.page.button.text}}</Button>
+      </div>
+      <div class="md:hidden">
         <a
-          :class="`${post.page.button.color} my-20 self-center shadow-xl text-xl rounded-full px-6 py-2 uppercase`"
           :href="post.page.button.link"
+          :class="`px-4 py-2 bg-${post.page.button.color} text-white text-lg uppercase rounded-full shadow-xl`"
           target="_blank"
-        >{{ post.page.button.text }}</a>
+          rel="noopener noreferrer"
+        >{{post.page.button.text}}</a>
       </div>
     </section>
   </article>
@@ -53,8 +64,10 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import MetaInfo from "vue-meta";
+import Button from "../components/Button.vue";
 
 @Component<BlogPost>({
+  components: { Button },
   transition() {
     return "slide-left";
   },
@@ -105,6 +118,7 @@ export default class BlogPost extends Vue {
   post: Post = this.$store.state.posts.find(
     (post: Post) => post.slug === this.params()
   );
+  link: string = "www.laundrop.se";
   params() {
     return this.$route.params.slug;
   }
