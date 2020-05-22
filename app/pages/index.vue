@@ -3,16 +3,16 @@
     <!-- posts container -->
     <div class="flex flex-wrap sm:justify-center md:justify-start xl:mx-10">
       <div v-for="(post, i) in posts" :key="i" class="md:w-1/2 xl:w-1/3">
-        <div class="post m-4 rounded overflow-hidden">
+        <div class="post m-4 mx-auto rounded overflow-hidden">
           <nuxt-link :to="`/${post.slug}`">
             <!-- img -->
             <img
-              class="w-full h-64 md:h-20rem lg:h-25rem sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-full object-cover"
+              class="w-full mx-auto h-64 md:h-20rem lg:h-25rem sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-full object-cover"
               :data-src="post.image || 'https://source.unsplash.com/random/640x340'"
               v-lazy-load
             />
             <!-- section text -->
-            <section class="p-6 bg-white">
+            <section class="p-6 bg-white mx-auto">
               <!-- title -->
               <h2 class="text-2xl mb-2">{{ post.title }}</h2>
               <!-- excerpt -->
