@@ -69,6 +69,9 @@ export default class BlogIndex extends Vue {
 <style lang="scss">
 .blog {
   .post {
+    .img {
+      object-fit: cover;
+    }
     @apply shadow-md;
     transition: all 0.2s cubic-bezier(0.64, 0, 0.35, 1);
     &:hover {
