@@ -13,7 +13,7 @@
               :data-src="post.image || 'https://source.unsplash.com/random/640x340'"
               v-lazy-load
             />
-            <!-- section textile -->
+            <!-- section text -->
             <section class="p-6 bg-white mx-auto">
               <!-- title -->
               <h2 class="text-2xl mb-2">{{ post.title }}</h2>
