@@ -28,7 +28,7 @@
         ></div>
 
         <div class="author-text text-white">
-          <p class>{{ post.page.author.title }}</p>
+          <p>{{ post.page.author.title }}</p>
           <div class="md:flex items-center">
             <p>{{ post.page.author.name }}</p>
             <i class="px-1 hidden md:block">•</i>

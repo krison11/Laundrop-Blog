@@ -42,11 +42,6 @@ export default class MobileMenu extends Vue {
 
 
 <style lang="css" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
-
-* {
-  font-family: "Poppins", sans-serif;
-}
 .negative-z {
   z-index: -5;
 }

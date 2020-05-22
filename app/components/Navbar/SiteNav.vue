@@ -125,15 +125,9 @@ export default class SiteNav extends Vue {
 </script>
 
 <style lang="css" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
-
 nav {
-  font-family: "Poppins", sans-serif;
   position: -webkit-sticky;
   position: sticky;
-}
-.blog {
-  font-family: "Poppins", sans-serif;
 }
 </style>
  

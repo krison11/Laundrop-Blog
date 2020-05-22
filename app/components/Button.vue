@@ -1,15 +1,16 @@
 <template>
   <div :class="`btn text-${color}`">
     <a class="btn-link" :href="url" target="_blank">
-      <div :class="`${color} text-${color}`" class="slot">{{btnText}}</div>
       <span :class="`btn-bg bg-${color}`"></span>
-      <div class="icon-parent">
+      <div :class="`${color} text-${color}`" class="slot">{{btnText}}</div>
+
+      <span class="icon-parent">
         <div class="icon">
           <span :class="`a bg-${color}`"></span>
           <span :class="`b bg-${color}`"></span>
           <span :class="`c bg-${color}`"></span>
         </div>
-      </div>
+      </span>
     </a>
     <div class="btn-shadow absolute m-auto mt-20 width-full heigh-0 transition-all ease-in"></div>
   </div>
@@ -29,39 +30,34 @@ export default class Button extends Vue {
 <style  lang="css" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* Arrow */
-.icon {
+/* button container */
+
+.btn {
+  margin: 5rem 0rem;
+  width: 100%;
   position: relative;
-}
-.icon span {
-  height: 5px;
-  box-shadow: 3px 10px 10px rgb(199, 199, 199);
-  position: absolute;
-}
-.a {
-  width: 30px;
-  right: 0;
-  -webkit-transform: rotate(22deg);
-  -moz-transform: rotate(22deg);
-  -o-transform: rotate(22deg);
-  transform: rotate(22deg);
-  transform: rotate(22deg);
-  margin-top: -6px;
-  margin-right: -60px;
-}
-.b {
-  width: 55px;
-  margin-left: 6px;
-}
-.c {
-  width: 30px;
-  margin-left: 30px;
-  margin-top: 6px;
-  -webkit-transform: rotate(-22deg);
-  -moz-transform: rotate(-22deg);
-  -o-transform: rotate(-22deg);
-  transform: rotate(-22deg);
-  transform: rotate(-22deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-flexbox;
+  display: -o-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -moz-flex-pack: center;
+  -o-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -o-flex-align: center;
+  -moz-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin: auto;
 }
 
 .btn:hover .icon-parent {
@@ -82,18 +78,18 @@ export default class Button extends Vue {
     rgb(255, 255, 255)
   );
 }
-/* end of Arrow */
 
-/* button container */
+/* end of btn container */
 
-.btn {
+.btn-link {
+  height: 100%;
+  width: fit-content;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -moz-flexbox;
   display: -o-flexbox;
   display: flex;
-  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -moz-flex-pack: center;
@@ -104,41 +100,18 @@ export default class Button extends Vue {
   -o-flex-align: center;
   -moz-flex-align: center;
   align-items: center;
-  width: fit-content;
-  margin: auto;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.btn-link {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -moz-flexbox;
-  display: -o-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -o-flex-align: center;
-  -moz-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -moz-flex-pack: center;
-  -o-flex-pack: center;
-  justify-content: center;
-  height: 100%;
   z-index: 0;
 }
 
-.btn :hover .btn-bg {
-  height: 100%;
+.btn-link:hover .btn-bg {
   width: 100%;
+  height: 100%;
   opacity: 1;
 }
-
 .btn-bg {
   position: absolute;
   right: 0;
@@ -151,24 +124,63 @@ export default class Button extends Vue {
   transition: all 0.3s ease;
   z-index: 1;
 }
-
 .slot {
-  font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
   font-size: 40px;
   padding: 10px 20px 10px 25px;
   letter-spacing: 7px;
   z-index: 2;
-  text-shadow: 3px 10px 10px rgb(199, 199, 199);
+  /* text-shadow: 3px 10px 10px rgb(199, 199, 199); */
+  text-transform: capitalize;
+  font-weight: bold;
 }
 .slot:hover {
-  background: transparent;
   color: white;
   text-shadow: none;
 }
-/* arrow */
+
+/*------- arrow ----------*/
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+}
+.icon span {
+  height: 4.7px;
+  /* box-shadow: 3px 10px 10px rgb(199, 199, 199); */
+}
+.a {
+  width: 22px;
+  margin-left: 27.5px;
+  margin-bottom: 1px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.b {
+  width: 42px;
+}
+.c {
+  width: 22px;
+  margin-left: 27.5px;
+  margin-top: 1px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 .icon-parent {
-  margin-left: 250px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 280px;
   position: absolute;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -178,7 +190,7 @@ export default class Button extends Vue {
 }
 .icon {
   margin-left: 0px;
-  animation: animate 0.5s ease infinite alternate;
+  animation: animate 0.5s ease alternate infinite;
 }
 
 @keyframes animate {

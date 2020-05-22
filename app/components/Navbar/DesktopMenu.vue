@@ -232,13 +232,7 @@ export default class DesktopMenu extends Vue {}
 </script>
 
 <style lang="css" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
-
-* {
-  font-family: "Poppins", sans-serif;
-}
 .nav-btn {
-  z-index: 4;
   height: 100%;
   width: 100%;
   display: flex;
@@ -248,6 +242,7 @@ export default class DesktopMenu extends Vue {}
   padding: 10px;
   margin-right: 10px;
   cursor: pointer;
+  z-index: 4;
 }
 .nav-btn:hover {
   @apply bg-primary-light;
