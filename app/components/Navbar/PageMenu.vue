@@ -29,6 +29,5 @@ export default class PageMenu extends Vue {}
 
 .buttons {
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
 }
 </style>

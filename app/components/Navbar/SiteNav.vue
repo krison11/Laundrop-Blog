@@ -3,7 +3,7 @@
   <fragment>
     <!-- NAV -->
     <nav
-      class="sticky top-0 left-0 flex items-center text-center h-16 bg-primary justify-between px-4 md:px-8 z-40"
+      class="top-0 left-0 flex items-center text-center h-16 bg-primary justify-between px-4 md:px-8 z-40"
     >
       <!-- svg logo -->
       <a href="https://www.Laundrop.se" target="_blank" rel="noopener noreferrer">
@@ -129,6 +129,8 @@ export default class SiteNav extends Vue {
 
 nav {
   font-family: "Poppins", sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
 }
 .blog {
   font-family: "Poppins", sans-serif;

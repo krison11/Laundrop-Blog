@@ -88,9 +88,21 @@ export default class Button extends Vue {
 
 .btn {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-flexbox;
+  display: -o-flexbox;
   display: flex;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -moz-flex-pack: center;
+  -o-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -o-flex-align: center;
+  -moz-flex-align: center;
   align-items: center;
   width: fit-content;
   margin: auto;
@@ -104,12 +116,18 @@ export default class Button extends Vue {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -moz-flexbox;
+  display: -o-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -o-flex-align: center;
+  -moz-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  -moz-flex-pack: center;
+  -o-flex-pack: center;
   justify-content: center;
   height: 100%;
   z-index: 0;
