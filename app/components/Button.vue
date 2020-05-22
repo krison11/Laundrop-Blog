@@ -11,9 +11,7 @@
         </div>
       </div>
     </a>
-    <div
-      class="btn-shadow absolute m-auto mt-20 width-full heigh-0 rounded-full transition-all ease-in"
-    ></div>
+    <div class="btn-shadow absolute m-auto mt-20 width-full heigh-0 transition-all ease-in"></div>
   </div>
 </template>
 <script lang="ts">
@@ -89,21 +87,6 @@ export default class Button extends Vue {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-// div {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-align: center;
-//   -ms-flex-align: center;
-//   align-items: center;
-//   -webkit-box-pack: center;
-//   -ms-flex-pack: center;
-//   justify-content: center;
-//   -webkit-transition: all 0.3s ease;
-//   -moz-transition: all 0.3s ease;
-//   -o-transition: all 0.3s ease;
-//   transition: all 0.3s ease;
-// }
 
 .text {
   position: relative;
@@ -142,7 +125,7 @@ export default class Button extends Vue {
     z-index: 1;
   }
   &:hover .span {
-    border-radius: 200px;
+    // border-radius: 200px;
     height: 100%;
     width: 100%;
     opacity: 1;
