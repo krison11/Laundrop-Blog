@@ -47,7 +47,8 @@
         <Button
           :url="post.page.button.link"
           :color="post.page.button.color"
-        >{{post.page.button.text}}</Button>
+          :btnText="post.page.button.text"
+        />
       </div>
       <div class="md:hidden">
         <a

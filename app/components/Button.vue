@@ -1,9 +1,7 @@
 <template>
   <div class="btn">
     <a class="text" :href="url" target="_blank">
-      <div :class="`slot text-${color}`">
-        <slot :class="`text-${color}`"></slot>
-      </div>
+      <div :class="`slot text-${color}`">{{btnText}}</div>
       <span :class="`span bg-${color}`"></span>
       <div class="icon-parent">
         <div class="icon">
@@ -24,23 +22,7 @@ import { Component, Prop } from "vue-property-decorator";
 export default class Button extends Vue {
   @Prop() url!: string;
   @Prop() color!: string;
-
-  getColor(color) {
-    switch (color) {
-      case "primary":
-        return "#4DC1C3";
-        break;
-      case "secondary":
-        return "#2F9291";
-        break;
-      case "black":
-        return "#000000";
-        break;
-      default:
-        return "#F6568C";
-        break;
-    }
-  }
+  @Prop() btnText!: string;
 }
 </script>
 
