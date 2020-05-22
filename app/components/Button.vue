@@ -2,9 +2,9 @@
   <div class="btn">
     <a :class="color" class="text" :href="url" target="_blank">
       <div :class="`slot text-${color}`">
-        <slot></slot>
+        <slot :class="`text-${color}`"></slot>
       </div>
-      <span class="span"></span>
+      <span :class="`span bg-${color}`"></span>
       <div class="icon-parent">
         <div class="icon">
           <span :class="`a bg-${color}`"></span>
