@@ -153,19 +153,19 @@ export default class BlogPost extends Vue {
 }
 .primary {
   text-decoration-color: #4dc1c3;
-  color: hsl(181, 50%, 53%);
+  color: #4bc1c3;
 }
 .secondary {
   text-decoration-color: #2f9291;
-  color: hsl(179, 51%, 38%);
+  color: #2f9291;
 }
 .ld-pink {
   text-decoration-color: #f6568c;
 
-  color: hsl(340, 90%, 65%);
+  color: #f6558b;
 }
 .black {
   text-decoration-color: #000000;
-  color: hsl(0, 0%, 0%);
+  color: #000000;
 }
 </style>

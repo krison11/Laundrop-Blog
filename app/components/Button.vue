@@ -204,16 +204,4 @@ export default class Button extends Vue {
   text-decoration-color: #000000;
   color: #000000;
 }
-/* .bg-primary {
-  background-color: rgb(75, 193, 195);
-}
-.bg-secondary {
-  background-color: #2f9291;
-}
-.bg-ld-pink {
-  background-color: #f6558b;
-}
-.bg-black {
-  background-color: #000000;
-} */
 </style>
