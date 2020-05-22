@@ -147,8 +147,25 @@ export default class BlogPost extends Vue {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 .header-img {
   height: 60vh;
+}
+.primary {
+  text-decoration-color: #4dc1c3;
+  color: hsl(181, 50%, 53%);
+}
+.secondary {
+  text-decoration-color: #2f9291;
+  color: hsl(179, 51%, 38%);
+}
+.ld-pink {
+  text-decoration-color: #f6568c;
+
+  color: hsl(340, 90%, 65%);
+}
+.black {
+  text-decoration-color: #000000;
+  color: hsl(0, 0%, 0%);
 }
 </style>

@@ -2,7 +2,7 @@
   <div :class="`btn text-${color}`">
     <a class="btn-link" :href="url" target="_blank">
       <div :class="`${color} text-${color}`" class="slot">{{btnText}}</div>
-      <span :class="`span bg-${color}`"></span>
+      <span :class="`btn-bg bg-${color}`"></span>
       <div class="icon-parent">
         <div class="icon">
           <span :class="`a bg-${color}`"></span>
@@ -114,14 +114,24 @@ export default class Button extends Vue {
   height: 100%;
   z-index: 0;
 }
-.btn-link :hover .span {
+
+.btn :hover .btn-bg {
   height: 100%;
   width: 100%;
   opacity: 1;
+}
+
+.btn-bg {
+  position: absolute;
+  right: 0;
+  height: 0px;
+  width: 0px;
+  opacity: 0.5;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .slot {
@@ -138,15 +148,7 @@ export default class Button extends Vue {
   color: white;
   text-shadow: none;
 }
-.span {
-  position: absolute;
-  right: 0;
-  height: 0px;
-  width: 0px;
-  opacity: 0.5;
-  transition: all 0.4s ease-in-out;
-  z-index: 1;
-}
+/* arrow */
 .icon-parent {
   margin-left: 250px;
   position: absolute;
@@ -166,21 +168,34 @@ export default class Button extends Vue {
     margin-left: 20px;
   }
 }
-
+/* fkng colors */
 .primary {
   text-decoration-color: #4dc1c3;
-  color: hsl(181, 50%, 53%);
+  color: #4bc1c3;
 }
 .secondary {
   text-decoration-color: #2f9291;
-  color: hsl(179, 51%, 38%);
+  color: #2f9291;
 }
 .ld-pink {
   text-decoration-color: #f6568c;
-  color: hsl(340, 90%, 65%);
+
+  color: #f6558b;
 }
 .black {
   text-decoration-color: #000000;
-  color: hsl(0, 0%, 0%);
+  color: #000000;
 }
+/* .bg-primary {
+  background-color: rgb(75, 193, 195);
+}
+.bg-secondary {
+  background-color: #2f9291;
+}
+.bg-ld-pink {
+  background-color: #f6558b;
+}
+.bg-black {
+  background-color: #000000;
+} */
 </style>
