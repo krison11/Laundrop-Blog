@@ -19,36 +19,42 @@ collections:
         name: meta
         format: json
         file: "app/content/metaContent/meta.json"
-        required: false
         fields:
-          - { label: "Seo Title", name: "seoTitle", widget: "string" }
+          - { label: "Seo Title", name: "seoTitle", widget: "string",required: false }
           - {
               label: "SEO Description",
               name: "seoDescription",
-              widget: "text"
+              widget: "text",
+              required: false
             }
           - {
               label: "SEO Website Name",
               name: "seoWebsiteName",
-              widget: "string"
+              widget: "string",
+              required: false
             }
           - {
               label: "SEO Website URL",
               name: "seoWebsiteUrl",
-              widget: "string"
+              widget: "string",
+              required: false
             }
           - { label: "Seo Meta Image",
               name: "seoMetaImage",
-              widget: "image" }
+              widget: "image",
+              required: false
+            }
           - {
               label: "SEO Type",
               name: "seoType",
-              widget: "string"
+              widget: "string",
+              required: false
             }
           - {
               label: "SEO Language",
               name: "seoLanguage",
-              widget: "string"
+              widget: "string",
+              required: false
             }
 
   - label: Blog
@@ -132,13 +138,18 @@ collections:
             name: "seo"
             widget: "object"
             collapsed: true
-            required: false
             fields:
-              - { label: "Website name", name: "metaWebsiteName", widget: "string" }
-              - { label: "Website Url", name: "metaWebsiteUrl", widget: "string" }
-              - { label: "Description", name: "metaDescription", widget: "text" }
-              - { label: "Image", name: "metaImage", widget: "image" }
-              - { label: "Type Article/Website?", name: "metaType", widget: "text" }
-              - { label: "Language", name: "metaLanguage", widget: "text" }
+              - { label: "Website name", name: "metaWebsiteName", widget: "string",
+            required: false }
+              - { label: "Website Url", name: "metaWebsiteUrl", widget: "string",
+            required: false }
+              - { label: "Description", name: "metaDescription", widget: "text",
+            required: false }
+              - { label: "Image", name: "metaImage", widget: "image",
+            required: false }
+              - { label: "Type Article/Website?", name: "metaType", widget: "text",
+            required: false }
+              - { label: "Language", name: "metaLanguage", widget: "text",
+            required: false }
 
           
