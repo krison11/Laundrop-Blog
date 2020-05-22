@@ -35,7 +35,6 @@ html {
   font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
 }
-
 *,
 *:before,
 *:after {

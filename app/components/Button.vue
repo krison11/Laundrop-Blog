@@ -1,7 +1,7 @@
 <template>
   <div :class="`btn text-${color}`">
     <a class="text" :href="url" target="_blank">
-      <div :class="color" class="`slot">{{btnText}}</div>
+      <div :class="color" class="slot">{{btnText}}</div>
       <span :class="`span bg-${color}`"></span>
       <div class="icon-parent">
         <div class="icon">
@@ -28,6 +28,8 @@ export default class Button extends Vue {
 
 <style  lang="css" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Arrow */
 .icon {
   position: relative;
 }
@@ -80,6 +82,9 @@ export default class Button extends Vue {
     rgb(255, 255, 255)
   );
 }
+/* end of Arrow */
+
+/* button container */
 
 .btn {
   position: relative;
@@ -113,10 +118,10 @@ export default class Button extends Vue {
   height: 100%;
   width: 100%;
   opacity: 1;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .slot {
