@@ -19,7 +19,7 @@ import SiteNav from "../components/Navbar/SiteNav.vue";
 export default class DefaultLayout extends Vue {}
 </script>
 
-<style lang="scss">
+<style lang="css">
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
 body {
   @apply antialiased;

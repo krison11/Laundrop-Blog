@@ -1,7 +1,7 @@
 <template>
   <div :class="`btn text-${color}`">
     <a class="text" :href="url" target="_blank">
-      <div :class="`slot text-${color}`">{{btnText}}</div>
+      <div :class="color" class="`slot">{{btnText}}</div>
       <span :class="`span bg-${color}`"></span>
       <div class="icon-parent">
         <div class="icon">
@@ -26,32 +26,39 @@ export default class Button extends Vue {
 }
 </script>
 
-<style  lang="scss" scoped>
+<style  lang="css" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .icon {
   position: relative;
 }
 .icon span {
-  border-radius: 50px;
   height: 5px;
-  box-shadow: 3px 10px 10px rgb(167, 167, 167);
+  box-shadow: 3px 10px 10px rgb(199, 199, 199);
   position: absolute;
 }
 .a {
-  width: 40px;
+  width: 30px;
   right: 0;
+  -webkit-transform: rotate(22deg);
+  -moz-transform: rotate(22deg);
+  -o-transform: rotate(22deg);
   transform: rotate(22deg);
-  margin-top: -7px;
-  margin-right: -70px;
+  transform: rotate(22deg);
+  margin-top: -6px;
+  margin-right: -60px;
 }
 .b {
-  width: 70px;
-  margin-right: -10px;
+  width: 55px;
+  margin-left: 6px;
 }
 .c {
-  width: 40px;
+  width: 30px;
   margin-left: 30px;
-  margin-top: 7px;
+  margin-top: 6px;
+  -webkit-transform: rotate(-22deg);
+  -moz-transform: rotate(-22deg);
+  -o-transform: rotate(-22deg);
+  transform: rotate(-22deg);
   transform: rotate(-22deg);
 }
 
@@ -101,42 +108,47 @@ export default class Button extends Vue {
   justify-content: center;
   height: 100%;
   z-index: 0;
-  .slot {
-    font-family: "Poppins", sans-serif;
-    text-transform: capitalize;
-    font-size: 40px;
-    padding: 10px 20px 10px 25px;
-    letter-spacing: 7px;
-    z-index: 2;
-    text-shadow: 3px 10px 10px rgb(167, 167, 167);
-  }
-  .slot:hover {
-    background: transparent;
-    color: white;
-    text-shadow: none;
-  }
-  .span {
-    position: absolute;
-    right: 0;
-    height: 0px;
-    width: 0px;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-    z-index: 1;
-  }
-  &:hover .span {
-    // border-radius: 200px;
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
-  }
+}
+.text:hover .span {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
 }
 
+.slot {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-size: 40px;
+  padding: 10px 20px 10px 25px;
+  letter-spacing: 7px;
+  z-index: 2;
+  text-shadow: 3px 10px 10px rgb(199, 199, 199);
+}
+.slot:hover {
+  background: transparent;
+  color: white;
+  text-shadow: none;
+}
+.span {
+  position: absolute;
+  right: 0;
+  height: 0px;
+  width: 0px;
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
 .icon-parent {
-  transition: all 0.4s ease;
   margin-left: 250px;
   position: absolute;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.4s ease;
   z-index: -1;
 }
 .icon {
@@ -148,5 +160,18 @@ export default class Button extends Vue {
   to {
     margin-left: 20px;
   }
+}
+
+.primary {
+  text-decoration-color: #4dc1c3;
+}
+.secondary {
+  text-decoration-color: #2f9291;
+}
+.ld-pink {
+  text-decoration-color: #f6568c;
+}
+.black {
+  text-decoration-color: #000000;
 }
 </style>

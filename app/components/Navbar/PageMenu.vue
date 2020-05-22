@@ -24,8 +24,11 @@ import { Component } from "vue-property-decorator";
 export default class PageMenu extends Vue {}
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+
 .buttons {
-  font-weight: 900es6iyrhfz ˇ¬g;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 </style>

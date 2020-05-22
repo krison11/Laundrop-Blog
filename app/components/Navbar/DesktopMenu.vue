@@ -231,7 +231,12 @@ import { Component } from "vue-property-decorator";
 export default class DesktopMenu extends Vue {}
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
 .nav-btn {
   z-index: 4;
   height: 100%;
@@ -243,53 +248,53 @@ export default class DesktopMenu extends Vue {}
   padding: 10px;
   margin-right: 10px;
   cursor: pointer;
-  &:hover {
-    @apply bg-primary-light;
-  }
 }
-
+.nav-btn:hover {
+  @apply bg-primary-light;
+}
 .dropdown {
   width: 100%;
   text-align: center;
   position: relative;
-  &:hover &-content {
-    display: block;
-    animation: animate 0.3s 0.1s forwards ease;
-  }
-  &-content {
-    position: absolute;
-    margin-top: -15px;
-    @apply shadow-2xl;
-    background: #ffffff;
-    color: #000000;
-    opacity: 0;
-    padding: 1rem;
-    border-radius: 5px;
-    display: none;
-    z-index: -1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: animate 0.3s 0.1s forwards ease;
+}
 
-    &-btn {
-      text-align: center;
-      border-radius: 3px;
-      &:hover {
-        @apply bg-light_grey;
-      }
-      a {
-        display: flex;
-        white-space: nowrap;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-        div {
-          @apply p-2;
-          @apply text-white;
-          @apply text-2xl;
-          @apply rounded-full;
-          @apply mr-2;
-        }
-      }
-    }
-  }
+.dropdown-content {
+  position: absolute;
+  margin-top: -15px;
+  @apply shadow-2xl;
+  background: #ffffff;
+  color: #000000;
+  opacity: 0;
+  padding: 1rem;
+  border-radius: 5px;
+  display: none;
+  z-index: -1;
+}
+
+.dropdown-content-btn {
+  text-align: center;
+  border-radius: 3px;
+}
+.dropdown-content-btn:hover {
+  @apply bg-light_grey;
+}
+.dropdown-content-btn a {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+a div {
+  @apply p-2;
+  @apply text-white;
+  @apply text-2xl;
+  @apply rounded-full;
+  @apply mr-2;
 }
 
 @keyframes animate {

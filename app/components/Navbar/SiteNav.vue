@@ -78,7 +78,7 @@
     <!-- if route name is index return the blog div -->
     <div
       v-if="$route.name==='index'"
-      class="bg-primary h-40 flex shadow-xl hidden md:flex flex-col justify-center items-center"
+      class="blog bg-primary h-40 flex shadow-xl hidden md:flex flex-col justify-center items-center"
     >
       <div class="text-5xl text-white">BLOG</div>
       <div class="h-1 w-10 bg-ld-yellow"></div>
@@ -124,7 +124,15 @@ export default class SiteNav extends Vue {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+
+nav {
+  font-family: "Poppins", sans-serif;
+}
+.blog {
+  font-family: "Poppins", sans-serif;
+}
 </style>
  
  
