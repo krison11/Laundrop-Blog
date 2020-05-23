@@ -8,8 +8,8 @@
         <span />
       </div>
     </div>
-    <div :class="isActive ? 'open z-10 h-full' : ''" class="bg-white fixed menu">
-      <div class="w-full flex flex-col relative justify-around h-90vh min-h-content container">
+    <div :class="isActive ? 'open ' : ''" class="bg-white fixed menu">
+      <div class="w-full container links">
         <a href="#">
           <p>BOKA TVÄTT</p>
           <div class="bg-primary">
@@ -212,21 +212,7 @@ export default class MobileMenu extends Vue {
 
 
 <style lang="css" scoped>
-a {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin: 0vh 1rem;
-  font-size: x-large;
-}
-a p {
-  width: 100%;
-}
-a div {
-  border-radius: 100%;
-  padding: 1rem;
-}
-
+/* ** menu icon ** */
 .negative-z {
   z-index: -5;
 }
@@ -304,6 +290,7 @@ a div {
   top: 30px;
   left: 9px;
 }
+/* *** menu *** */
 .menu {
   top: 95px;
   width: 100%;
@@ -316,12 +303,42 @@ a div {
   transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 .menu.open {
+  height: calc(100vh - 95px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   visibility: visible;
+  z-index: 1;
   opacity: 1;
 }
 @media (max-width: 960px) {
   .menu {
     top: 64px;
   }
+  .menu.open {
+    height: calc(100vh - 64px);
+  }
+}
+
+/* ** link container **  */
+.links {
+  padding: 1.5rem 0rem;
+  height: fit-content;
+  overflow-y: scroll;
+  background: red;
+}
+.links a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 1.5rem 1rem;
+  font-size: large;
+}
+.links a p {
+  width: 100%;
+}
+.links a div {
+  border-radius: 100%;
+  padding: 0.7rem;
 }
 </style>
