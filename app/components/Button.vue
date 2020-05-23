@@ -129,7 +129,7 @@ export default class Button extends Vue {
   padding: 10px 20px 10px 25px;
   letter-spacing: 7px;
   z-index: 2;
-  /* text-shadow: 3px 10px 10px rgb(199, 199, 199); */
+  text-shadow: 3px 10px 10px rgb(199, 199, 199);
   text-transform: capitalize;
   font-weight: bold;
 }
@@ -151,12 +151,12 @@ export default class Button extends Vue {
 }
 .icon span {
   height: 4.7px;
-  /* box-shadow: 3px 10px 10px rgb(199, 199, 199); */
+  box-shadow: 3px 10px 10px rgb(199, 199, 199);
 }
 .a {
   width: 22px;
-  margin-left: 27.5px;
-  margin-bottom: 1px;
+  margin-left: 27.2px;
+  margin-bottom: 1.2px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -164,12 +164,13 @@ export default class Button extends Vue {
   transform: rotate(45deg);
 }
 .b {
-  width: 42px;
+  width: 40px;
+  height: 5px !important;
 }
 .c {
   width: 22px;
-  margin-left: 27.5px;
-  margin-top: 1px;
+  margin-left: 27.2px;
+  margin-top: 1.2px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
