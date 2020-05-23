@@ -49,7 +49,7 @@
             </svg>
           </div>
         </a>
-
+        <hr class="h-px w-1/3 color-grey-200 m-auto" />
         <a href="#">
           <p>PRISLISTA</p>
           <div class="bg-black">
@@ -89,7 +89,7 @@
             </svg>
           </div>
         </a>
-
+        <hr class="h-px w-1/3 color-grey-200 m-auto" />
         <a href="#">
           <p>OM OSS</p>
           <div class="bg-ld-pink">
@@ -322,20 +322,24 @@ export default class MobileMenu extends Vue {
 
 /* ** link container **  */
 .links {
-  padding: 1.5rem 0rem;
+  padding: 1.2rem;
   height: fit-content;
   overflow-y: scroll;
-  background: red;
 }
 .links a {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 1.5rem 1rem;
+  justify-content: flex-end;
+  margin: 1.5rem 0rem;
   font-size: large;
 }
+
 .links a p {
   width: 100%;
+  position: absolute;
+  text-align: center;
 }
 .links a div {
   border-radius: 100%;
