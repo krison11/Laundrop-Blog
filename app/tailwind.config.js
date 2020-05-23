@@ -27,6 +27,10 @@ module.exports = {
         "30rem": "30rem",
         "25rem": "25rem",
         "20rem": "20rem",
+        "90vh": "90vh",
+        "93vh": "93vh",
+        "95vh": "95vh",
+
       }
     },
   },
