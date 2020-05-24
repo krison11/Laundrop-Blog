@@ -11,8 +11,7 @@
             class="header-img-text w-full lg:w-1/2 max-w-sm md:max-w-md lg:max-w-lg xl:mx-w-xl"
           >
             <h1
-              :class="post.page.hero.color"
-              class="text-4xl md:text-5xl text-md lg:text-6xl uppercase font-bold tracking-wide"
+              :class="`${post.page.hero.color} text-4xl md:text-5xl text-md lg:text-6xl uppercase font-bold tracking-wide`"
             >{{ post.page.hero.text }}</h1>
             <p class="text-xl md:text-2xl lg:text-3xl text-bg-grey">By Laundrop</p>
           </div>
@@ -141,22 +140,5 @@ export default class BlogPost extends Vue {
 <style lang="css" scoped>
 .header-img {
   height: 60vh;
-}
-.primary {
-  text-decoration-color: #4dc1c3;
-  color: #4bc1c3;
-}
-.secondary {
-  text-decoration-color: #2f9291;
-  color: #2f9291;
-}
-.ld-pink {
-  text-decoration-color: #f6568c;
-
-  color: #f6558b;
-}
-.black {
-  text-decoration-color: #000000;
-  color: #000000;
 }
 </style>
