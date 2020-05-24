@@ -346,7 +346,5 @@ export default class MobileMenu extends Vue {
   box-shadow: 0.5px 2px 2.5px 0px rgba(0, 0, 0, 0.37);
   border-top: 0.5px solid #ffffff96;
   border-left: 0.5px solid #ffffff96;
-  /* border-bottom: 0.5px solid #7c7c7c7a;
-  border-right: 0.5px solid #7a7a7a7e; */
 }
 </style>
