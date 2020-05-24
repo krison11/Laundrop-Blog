@@ -344,5 +344,6 @@ export default class MobileMenu extends Vue {
 .links a div {
   border-radius: 100%;
   padding: 0.7rem;
+  box-shadow: 0.5px 2px 2.5px 0px rgb(93, 93, 93);
 }
 </style>
