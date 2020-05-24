@@ -2,7 +2,11 @@
   <section class="blog my-10">
     <!-- posts container -->
     <div class="flex flex-wrap sm:justify-center md:justify-start xl:mx-10">
-      <div v-for="(post, i) in posts" :key="i" class="sm:max-w-sm md:w-1/2 md:max-w-md">
+      <div
+        v-for="(post, i) in posts"
+        :key="i"
+        class="sm:max-w-sm md:w-1/2 md:max-w-md xl:w1/3 xl:max-w-xl"
+      >
         <div class="post m-4 rounded overflow-hidden">
           <nuxt-link :to="`/${post.slug}`">
             <!-- img -->
