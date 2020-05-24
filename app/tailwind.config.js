@@ -12,10 +12,10 @@ module.exports = {
     extend: {
       colors: {
         "primary": 'hsl(181, 50%, 53%)',
-        "primary-light": '#52cbcd9c',
         "secondary": 'hsl(179, 51%, 38%)',
-        "secondary-dark": "#103E3D",
         "ld-pink": 'hsl(340, 90%, 65%)',
+        "primary-light": '#52cbcd9c',
+        "secondary-dark": "#103E3D",
         "ld-yellow": "#FFCA41",
         "grey": ' #2d3748',
         "darker": '#00000058',

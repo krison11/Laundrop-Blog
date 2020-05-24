@@ -49,7 +49,7 @@
             </svg>
           </div>
         </a>
-        <hr class="h-px w-1/3 color-grey-200 m-auto" />
+        <hr class="h-px w-1/3 color-grey-400 m-auto" />
         <a href="#">
           <p>PRISLISTA</p>
           <div class="bg-black">

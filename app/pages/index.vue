@@ -30,7 +30,7 @@
                   <div class="md:flex">
                     <p>{{ post.page.author.name }}</p>
                     <i class="px-1 hidden md:block">•</i>
-                    <i class>{{ post.page.author.publishDate }}</i>
+                    <i class="ml-px">{{ post.page.author.publishDate }}</i>
                   </div>
                 </div>
               </div>

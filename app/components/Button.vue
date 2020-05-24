@@ -4,13 +4,21 @@
       <span :class="`btn-bg bg-${color}`"></span>
       <div :class="`${color} text-${color}`" class="slot">{{btnText}}</div>
 
-      <span class="icon-parent">
+      <!-- <span class="icon-parent">
         <div class="icon">
           <span :class="`a bg-${color}`"></span>
           <span :class="`b bg-${color}`"></span>
           <span :class="`c bg-${color}`"></span>
         </div>
-      </span>
+      </span>-->
+      <div class="icon">
+        <svg width="45" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3 11.0269H17.17L13.59 7.43686L15 6.02686L21 12.0269L15 18.0269L13.59 16.6169L17.17 13.0269H3V11.0269Z"
+            :fill="getColor(color)"
+          />
+        </svg>
+      </div>
     </a>
     <div class="btn-shadow absolute m-auto mt-20 width-full heigh-0 transition-all ease-in"></div>
   </div>
@@ -24,11 +32,41 @@ export default class Button extends Vue {
   @Prop() url!: string;
   @Prop() color!: string;
   @Prop() btnText!: string;
+
+  getColor(color) {
+    switch (color) {
+      case "primary":
+        return "#4bc1c3";
+
+        break;
+      case "secondary":
+        return "#2f9291";
+
+        break;
+      case "ld-pink":
+        return " #f6558b";
+
+        break;
+      case "black":
+        return "#000000";
+
+        break;
+    }
+    return color;
+  }
 }
 </script>
 
 <style  lang="css" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+} */
+
+/* ~~~~~~~ INIT. BTN ~~~~~~~ */
 
 /* button container */
 
@@ -60,7 +98,7 @@ export default class Button extends Vue {
   margin: auto;
 }
 
-.btn:hover .icon-parent {
+.btn:hover .icon {
   margin-left: 0;
   opacity: 0;
 }
@@ -140,7 +178,7 @@ export default class Button extends Vue {
 
 /*------- arrow ----------*/
 
-.icon {
+/* .icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,20 +214,22 @@ export default class Button extends Vue {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   transform: rotate(-45deg);
-}
+} */
 
-.icon-parent {
+.icon {
   width: fit-content;
   height: fit-content;
-  margin-left: 280px;
   position: absolute;
+  margin-left: 280px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.4s ease;
   z-index: -1;
+  height: 40;
+  width: 40;
 }
-.icon {
+svg {
   margin-left: 0px;
   animation: animate 0.5s ease alternate infinite;
 }

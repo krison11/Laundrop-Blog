@@ -32,7 +32,7 @@
           <div class="md:flex items-center">
             <p>{{ post.page.author.name }}</p>
             <i class="px-1 hidden md:block">•</i>
-            <i class>{{ post.page.author.publishDate }}</i>
+            <i class="ml-px">{{ post.page.author.publishDate }}</i>
           </div>
         </div>
       </div>
@@ -47,6 +47,8 @@
     </section>
     <section class="w-full relative text-center py-20 md:py-24">
       <div class="hidden md:block">
+        <!-- <Button /> -->
+        <!-- <Button :url="post.page.button.link" :btnText="post.page.button.text" /> -->
         <Button
           :url="post.page.button.link"
           :color="post.page.button.color"
