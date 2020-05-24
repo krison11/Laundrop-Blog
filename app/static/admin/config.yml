@@ -88,12 +88,12 @@ collections:
                 default: "secondary"
                 required: false
                 options:
-                  - { label: "Black", value: "black" }
-                  - { label: "White", value: "white" }
-                  - { label: "Pink", value: "pink" } 
-                  - { label: "Yellow", value: "ellow" } 
-                  - { label: "Primary", value: "primary" } 
-                  - { label: "Secondary", value: "secondary" }
+                  - { label: "Black", value: "text-black" }
+                  - { label: "White", value: "text-white" }
+                  - { label: "Pink", value: "text-ld-pink" } 
+                  - { label: "Yellow", value: "text-ld-yellow" } 
+                  - { label: "Primary", value: "text-primary" } 
+                  - { label: "Secondary", value: "text-secondary" }
 
           - label: "Author"
             name: "author"
