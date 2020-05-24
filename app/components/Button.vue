@@ -6,7 +6,7 @@
           :class="`sm-btn w-full relative flex justify-center items-center flex-no-wrap bg-${color} text-white text-xl py-3 uppercase rounded-full`"
         >
           <span class="mr-4">{{btnText}}</span>
-          <span class="absolute ml-32">
+          <span class="absolute ml-24">
             <svg width="20" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M6.16504 20.1568L7.93504 21.9268L17.835 12.0268L7.93504 2.12683L6.16504 3.89683L14.295 12.0268L6.16504 20.1568H6.16504Z"
