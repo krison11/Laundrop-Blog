@@ -80,7 +80,7 @@
       v-if="$route.name==='index'"
       class="blog bg-primary h-40 flex shadow-xl hidden md:flex flex-col justify-center items-center"
     >
-      <div class="text-5xl text-white">BLOG</div>
+      <div class="text-5xl text-white tracking-wider">BLOG</div>
       <div class="h-1 w-10 bg-ld-yellow"></div>
     </div>
   </fragment>

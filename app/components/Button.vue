@@ -88,7 +88,7 @@ export default class Button extends Vue {
   box-shadow: 0.5px 2px 2.5px 0px rgb(71, 71, 71);
 }
 .sm-icon {
-  margin-left: 35%;
+  margin-left: 38%;
 }
 
 /* button container */

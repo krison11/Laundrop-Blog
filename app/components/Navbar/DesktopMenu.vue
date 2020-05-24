@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="$route.name==='index'"
-    class="home-menu hidden h-full md:flex md:flex-row md:w-auto text-m text-white uppercase bg-primary absolute right-0 top-0 px-10"
+    class="home-menu hidden h-full md:flex md:flex-row md:w-auto text-m text-white uppercase bg-primary absolute right-0 top-0 px-10 tracking-widest"
   >
     <!-- BOKA dropdown -->
     <div class="dropdown md:w-auto">
