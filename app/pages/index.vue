@@ -5,7 +5,7 @@
       <div
         v-for="(post, i) in posts"
         :key="i"
-        class="sm:max-w-sm md:w-1/2 md:max-w-md xl:w1/3 xl:max-w-xl"
+        class="sm:max-w-sm md:w-1/2 md:max-w-md lg:max-w-lg xl:w-1/3 xl:max-w-xl"
       >
         <div class="post m-4 rounded overflow-hidden">
           <nuxt-link :to="`/${post.slug}`">
