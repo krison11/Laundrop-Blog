@@ -11,7 +11,8 @@
             class="header-img-text w-full lg:w-1/2 max-w-sm md:max-w-md lg:max-w-lg xl:mx-w-xl"
           >
             <h1
-              :class="`${post.page.hero.color} text-4xl md:text-5xl text-md lg:text-6xl uppercase font-bold tracking-wide`"
+              :class="getColor(post.page.hero.color)"
+              class="text-4xl md:text-5xl text-md lg:text-6xl uppercase font-bold tracking-wide"
             >{{ post.page.hero.text }}</h1>
             <p class="text-xl md:text-2xl lg:text-3xl text-bg-grey">By Laundrop</p>
           </div>
@@ -119,6 +120,30 @@ export default class BlogPost extends Vue {
 
   params() {
     return this.$route.params.slug;
+  }
+
+  getColor(color) {
+    switch (color) {
+      case "black":
+        return "text-black";
+        break;
+      case "white":
+        return "text-white";
+        break;
+      case "primary":
+        return "text-primary";
+        break;
+      case "secondary":
+        return "text-secondary";
+        break;
+      case "yellow":
+        return "text-ld-yellow";
+        break;
+      case "pink":
+        return "text-ld-pink";
+        break;
+    }
+    return color;
   }
   // post!: Post;
   // async asyncData({ params, payload }): Promise<{ post: Post }> {
