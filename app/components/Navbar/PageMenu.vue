@@ -30,5 +30,7 @@ export default class PageMenu extends Vue {}
 }
 .btn-sm {
   box-shadow: 0px 1px 1.5px 0px rgb(116, 116, 116);
+  border-top: 0.5px solid #ffffffb2;
+  border-left: 0.5px solid#ffffffb2;
 }
 </style>

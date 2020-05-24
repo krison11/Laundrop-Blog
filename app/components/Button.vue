@@ -81,11 +81,14 @@ export default class Button extends Vue {
 }
 </script>
 
-<style  lang="css" scoped>
+<style  lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/* sm-btn */
 .sm-btn {
   box-shadow: 0.5px 2px 2.5px 0px rgb(71, 71, 71);
+  border-top: 1px solid #ffffffb2;
+  border-left: 1px solid#ffffffb2;
 }
 .sm-icon {
   margin-left: 38%;
