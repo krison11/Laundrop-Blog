@@ -8,7 +8,7 @@
         <span />
       </div>
     </div>
-    <div :class="isActive ? 'open ' : ''" class="bg-white fixed menu">
+    <div :class="isActive ? 'open ' : ''" class="bg-secondary text-white fixed menu">
       <div class="w-full container links tracking-widest">
         <a href="#">
           <p>BOKA TVÄTT</p>
@@ -29,7 +29,6 @@
             </svg>
           </div>
         </a>
-
         <a href="#">
           <p>ABONNEMANG</p>
           <div class="bg-primary">
@@ -49,7 +48,7 @@
             </svg>
           </div>
         </a>
-        <hr class="h-px w-1/3 color-grey-400 m-auto" />
+        <hr class="border-primary w-1/3 m-auto" />
         <a href="#">
           <p>PRISLISTA</p>
           <div class="bg-black">
@@ -89,7 +88,7 @@
             </svg>
           </div>
         </a>
-        <hr class="h-px w-1/3 color-grey-200 m-auto" />
+        <hr class="border-primary w-1/3 m-auto" />
         <a href="#">
           <p>OM OSS</p>
           <div class="bg-ld-pink">
@@ -344,8 +343,10 @@ export default class MobileMenu extends Vue {
 .links a div {
   border-radius: 100%;
   padding: 0.7rem;
-  box-shadow: 0.5px 2px 2.5px 0px rgb(93, 93, 93);
-  border-top: 0.5px solid #ffffffb2;
-  border-left: 0.5px solid #ffffffb2;
+  box-shadow: 0.5px 2px 2.5px 0px rgba(0, 0, 0, 0.37);
+  border-top: 0.5px solid #ffffff96;
+  border-left: 0.5px solid #ffffff96;
+  /* border-bottom: 0.5px solid #7c7c7c7a;
+  border-right: 0.5px solid #7a7a7a7e; */
 }
 </style>
