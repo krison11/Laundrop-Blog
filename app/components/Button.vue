@@ -3,7 +3,7 @@
     <section class="`block md:hidden">
       <a :href="url" target="_blank" rel="noopener noreferrer">
         <div
-          :class="`sm-btn w-full relative flex justify-center items-center flex-no-wrap bg-${color} text-white text-xl py-3 uppercase rounded-full`"
+          :class="`sm-btn w-full relative flex justify-center items-center flex-no-wrap bg-${color} text-white text-xl py-3 uppercase rounded-full tracking-widest`"
         >
           <span>{{btnText}}</span>
           <span class="sm-icon absolute">
@@ -85,10 +85,10 @@ export default class Button extends Vue {
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .sm-btn {
-  box-shadow: 0px 2px 2.5px 0px rgb(51, 51, 51);
+  box-shadow: 0.5px 2px 2.5px 0px rgb(71, 71, 71);
 }
 .sm-icon {
-  margin-left: 33%;
+  margin-left: 35%;
 }
 
 /* button container */

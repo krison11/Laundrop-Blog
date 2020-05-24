@@ -9,7 +9,7 @@
       </div>
     </div>
     <div :class="isActive ? 'open ' : ''" class="bg-white fixed menu">
-      <div class="w-full container links">
+      <div class="w-full container links tracking-widest">
         <a href="#">
           <p>BOKA TVÄTT</p>
           <div class="bg-primary">
