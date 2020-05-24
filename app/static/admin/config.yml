@@ -82,8 +82,8 @@ collections:
             fields: 
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Text", name: "text", widget: "string", required: false }
-              - label: "Color"
-                name: "color"
+              - label: "Text Color"
+                name: "textColor"
                 widget: "select"
                 default: "secondary"
                 required: false

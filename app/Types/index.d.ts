@@ -7,7 +7,7 @@ declare global {
 interface Hero {
   image: string;
   text: string;
-  color: string;
+  textColor: string;
 }
 interface Author {
   image: string;

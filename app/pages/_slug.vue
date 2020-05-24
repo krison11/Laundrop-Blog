@@ -7,11 +7,11 @@
       >
         <div class="container h-full flex items-center px-3 md:px-0">
           <div
-            v-if="post.page.hero.color && post.page.hero.text"
+            v-if="post.page.hero.textColor && post.page.hero.text"
             class="header-img-text w-full lg:w-1/2 max-w-sm md:max-w-md lg:max-w-lg xl:mx-w-xl"
           >
             <h1
-              :class="post.page.hero.color"
+              :class="post.page.hero.textColor"
               class="text-4xl md:text-5xl text-md lg:text-6xl uppercase font-bold tracking-wide"
             >{{ post.page.hero.text }}</h1>
             <p class="text-xl md:text-2xl lg:text-3xl text-bg-grey">By Laundrop</p>
