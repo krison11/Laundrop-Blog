@@ -45,24 +45,13 @@
         v-lazy-load="$md.render(post.page.markdown)"
       />
     </section>
-    <section class="w-full relative text-center py-20 md:py-24">
-      <div class="hidden md:block">
-        <!-- <Button /> -->
-        <!-- <Button :url="post.page.button.link" :btnText="post.page.button.text" /> -->
-        <Button
-          :url="post.page.button.link"
-          :color="post.page.button.color"
-          :btnText="post.page.button.text"
-        />
-      </div>
-      <div class="md:hidden">
-        <a
-          :href="post.page.button.link"
-          :class="`px-4 py-2 bg-${post.page.button.color} text-white text-lg uppercase rounded-full shadow-xl`"
-          target="_blank"
-          rel="noopener noreferrer"
-        >{{post.page.button.text}}</a>
-      </div>
+
+    <section class="text-center px-3 py-20 md:py-24 container">
+      <Button
+        :url="post.page.button.link"
+        :color="post.page.button.color"
+        :btnText="post.page.button.text"
+      />
     </section>
   </article>
 </template>

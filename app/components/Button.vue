@@ -1,33 +1,57 @@
 <template>
-  <div :class="`btn text-${color}`">
-    <a class="btn-link" :href="url" target="_blank">
-      <span :class="`btn-bg bg-${color}`"></span>
-      <div :class="`${color} text-${color}`" class="slot">{{btnText}}</div>
+  <fragment>
+    <section class="`block md:hidden">
+      <a :href="url" target="_blank" rel="noopener noreferrer">
+        <div
+          :class="`sm-btn w-full relative flex justify-center items-center flex-no-wrap bg-${color} text-white text-xl py-3 uppercase rounded-full`"
+        >
+          <span class="mr-4">{{btnText}}</span>
+          <span class="absolute ml-32">
+            <svg width="20" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.16504 20.1568L7.93504 21.9268L17.835 12.0268L7.93504 2.12683L6.16504 3.89683L14.295 12.0268L6.16504 20.1568H6.16504Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+        </div>
+      </a>
+    </section>
 
-      <!-- <span class="icon-parent">
+    <section class="hidden md:block">
+      <div :class="`btn text-${color}`">
+        <a class="btn-link" :href="url" target="_blank">
+          <span :class="`btn-bg bg-${color}`"></span>
+          <div :class="`${color} text-${color}`" class="slot">{{btnText}}</div>
+
+          <!-- <span class="icon-parent">
         <div class="icon">
           <span :class="`a bg-${color}`"></span>
           <span :class="`b bg-${color}`"></span>
           <span :class="`c bg-${color}`"></span>
         </div>
-      </span>-->
-      <div class="icon">
-        <svg width="45" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M3 11.0269H17.17L13.59 7.43686L15 6.02686L21 12.0269L15 18.0269L13.59 16.6169L17.17 13.0269H3V11.0269Z"
-            :fill="getColor(color)"
-          />
-        </svg>
+          </span>-->
+          <div class="icon">
+            <svg width="45" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 11.0269H17.17L13.59 7.43686L15 6.02686L21 12.0269L15 18.0269L13.59 16.6169L17.17 13.0269H3V11.0269Z"
+                :fill="getColor(color)"
+              />
+            </svg>
+          </div>
+        </a>
+        <div class="btn-shadow absolute m-auto mt-20 width-full heigh-0 transition-all ease-in"></div>
       </div>
-    </a>
-    <div class="btn-shadow absolute m-auto mt-20 width-full heigh-0 transition-all ease-in"></div>
-  </div>
+    </section>
+  </fragment>
 </template>
 <script lang="ts">
-import Vue from "vue";
-import { Component, Prop } from "vue-property-decorator";
+import { Fragment } from "vue-fragment";
+import { Vue, Component, Prop } from "vue-property-decorator";
 
-@Component
+@Component({
+  components: { Fragment }
+})
 export default class Button extends Vue {
   @Prop() url!: string;
   @Prop() color!: string;
@@ -60,13 +84,9 @@ export default class Button extends Vue {
 <style  lang="css" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* *,
-*:before,
-*:after {
-  box-sizing: border-box;
-} */
-
-/* ~~~~~~~ INIT. BTN ~~~~~~~ */
+.sm-btn {
+  box-shadow: 1px 2px 4px 0px rgb(41, 41, 41);
+}
 
 /* button container */
 
@@ -230,7 +250,6 @@ export default class Button extends Vue {
   width: 40;
 }
 svg {
-  margin-left: 0px;
   animation: animate 0.5s ease alternate infinite;
 }
 
