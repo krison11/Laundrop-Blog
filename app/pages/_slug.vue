@@ -11,7 +11,7 @@
             class="header-img-text w-full lg:w-1/2 max-w-sm md:max-w-md lg:max-w-lg xl:mx-w-xl"
           >
             <h1
-              :class="`text-${getColor(post.page.hero.textColor)}`"
+              :class="getColor(post.page.hero.textColor)"
               class="text-4xl md:text-5xl text-md lg:text-6xl uppercase font-bold tracking-wide"
             >{{ post.page.hero.text }}</h1>
             <p class="text-xl md:text-2xl lg:text-3xl text-bg-grey">By Laundrop</p>
@@ -49,7 +49,7 @@
     <section class="text-center px-3 py-20 md:py-24 container">
       <Button
         :url="post.page.button.link"
-        :color="getColor(post.page.button.color)"
+        :color="post.page.button.color"
         :btnText="post.page.button.text"
       />
     </section>
@@ -124,22 +124,22 @@ export default class BlogPost extends Vue {
   getColor(color) {
     switch (color) {
       case "primary":
-        return "primary";
+        return "text-primary";
         break;
       case "secondary":
-        return "secondary";
+        return "text-secondary";
         break;
       case "pink":
-        return "ld-pink";
+        return "text-ld-pink";
         break;
       case "black":
-        return "black";
+        return "text-black";
         break;
       case "white":
-        return "white";
+        return "text-white";
         break;
       case "yellow":
-        return "ld-yellow";
+        return "text-ld-yellow";
         break;
     }
     return color;

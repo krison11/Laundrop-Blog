@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`bg-${color}`"
+    :class="getColor(color)"
     class="w-full relative btn w-full m-auto max-w-sm py-2 text-xl md:py-3 md:text:2xl md:max-w-md lg:max-w-lg lg:text-2xl xl:max-w-md xl:py-3 xl:text-2xl uppercase rounded-full text-white tracking-widest"
   >
     <a :href="url" target="_blank" rel="noopener noreferrer">
@@ -31,6 +31,30 @@ export default class Button extends Vue {
   @Prop() url!: string;
   @Prop() color!: string;
   @Prop() btnText!: string;
+
+  getColor(color) {
+    switch (color) {
+      case "primary":
+        return "bg-primary";
+        break;
+      case "secondary":
+        return "bg-secondary";
+        break;
+      case "pink":
+        return "bg-ld-pink";
+        break;
+      case "black":
+        return "bg-black";
+        break;
+      case "white":
+        return "bg-white";
+        break;
+      case "yellow":
+        return "bg-ld-yellow";
+        break;
+    }
+    return color;
+  }
 }
 </script>
 
