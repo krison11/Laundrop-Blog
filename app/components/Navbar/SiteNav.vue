@@ -1,7 +1,7 @@
 <template>
   <fragment>
     <nav
-      class="top-0 left-0 flex items-center text-center h-16 bg-primary justify-between px-4 md:px-8 z-40"
+      class="sticky top-0 left-0 flex items-center text-center h-16 bg-primary justify-between px-4 md:px-8 z-40"
     >
       <Logo :responsive="true" :iconHeight="30" :iconWidth="30" :nameWidth="170" :color="'white'" />
       <MobileMenu />
@@ -41,8 +41,8 @@ export default class SiteNav extends Vue {}
 
 <style lang="css" scoped>
 nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: -webkit-sticky !important;
+  position: sticky !important;
 }
 </style>
  
