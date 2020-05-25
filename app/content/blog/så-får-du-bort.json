@@ -1,0 +1,24 @@
+{
+  "page": {
+    "hero": {
+      "textColor": "text-primary",
+      "image": "/images/uploads/coffee.jpeg",
+      "text": "Kaffe fläckar? "
+    },
+    "author": {
+      "publishDate": "May 22, 2020 4:31 PM",
+      "name": "Jonas",
+      "image": "/images/uploads/guy.jpeg",
+      "title": "3 min read"
+    },
+    "button": {
+      "color": "secondary",
+      "text": "boka upphämtning",
+      "link": "https://www.laundrop.se"
+    },
+    "markdown": "rcytuvyibuoijpokåp"
+  },
+  "image": "/images/uploads/coffee.jpeg",
+  "title": "Så får du bort...",
+  "excerpt": "Sug upp så mycket kaffe du kan med en duk. Blanda sedan en matsked flytande diskmedel, en matsked ättika och 4,5 deciliter varmt vatten. Använd en vit, ren duk och badda fläcken med vätskan. Ta lite i taget och sug emellanåt upp med en torr duk tills fläcken försvunnit."
+}
