@@ -187,7 +187,7 @@ footer {
   }
 }
 
-@media only screen and (min-device-width: 640px) {
+@media only screen and (min-device-width: 768px) {
   .info-container {
     font-size: 18px;
     display: flex;
@@ -216,7 +216,6 @@ footer {
   .social-media {
     flex-direction: column;
     margin-top: 17px;
-    // flex-direction: column;
   }
 }
 </style>
