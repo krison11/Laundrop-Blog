@@ -85,15 +85,15 @@ collections:
               - label: "Text Color"
                 name: "textColor"
                 widget: "select"
-                default: "text-secondary"
+                default: "secondary"
                 required: false
                 options:
-                  - { label: "Black", value: "text-black" }
-                  - { label: "White", value: "text-white" }
-                  - { label: "Pink", value: "text-ld-pink" } 
-                  - { label: "Yellow", value: "text-ld-yellow" } 
-                  - { label: "Primary", value: "text-primary" } 
-                  - { label: "Secondary", value: "text-secondary" }
+                  - { label: "Black", value: "black" }
+                  - { label: "White", value: "white" }
+                  - { label: "Pink", value: "pink" } 
+                  - { label: "Yellow", value: "yellow" } 
+                  - { label: "Primary", value: "primary" } 
+                  - { label: "Secondary", value: "secondary" }
 
           - label: "Author"
             name: "author"
@@ -127,12 +127,12 @@ collections:
               - label: "Color"
                 name: "color" 
                 widget: "select"
-                default: "bg-ld-pink"
+                default: "pink"
                 options:
-                  - { label: "Black", value: "bg-black" }
-                  - { label: "Pink", value: "bg-ld-pink" } 
-                  - { label: "Primary", value: "bg-primary" } 
-                  - { label: "Secondary", value: "bg-secondary" } 
+                  - { label: "Black", value: "black" }
+                  - { label: "Pink", value: "pink" } 
+                  - { label: "Primary", value: "primary" } 
+                  - { label: "Secondary", value: "secondary" } 
                     
           - label: "Seo"
             name: "seo"
