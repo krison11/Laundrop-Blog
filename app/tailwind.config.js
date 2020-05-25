@@ -11,9 +11,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        "primary": 'hsl(181, 50%, 53%)',
-        "secondary": 'hsl(179, 51%, 38%)',
-        "ld-pink": 'hsl(340, 90%, 65%)',
+        "primary": ' #4bc1c3',
+        "secondary": '#2f9291',
+        "ld-pink": '#f6558b',
         "primary-light": '#52cbcd9c',
         "secondary-dark": "#103E3D",
         "ld-yellow": "#FFCA41",
@@ -23,14 +23,12 @@ module.exports = {
         "lighter": '#c9c9c9;'
       },
       height: {
-        "35rem": "35rem",
-        "30rem": "30rem",
-        "25rem": "25rem",
-        "20rem": "20rem",
+        "50vh": "50vh",
+        "60vh": "60vh",
+        "70vh": "70vh",
+        "80vh": "80vh",
+        "85vh": "85vh",
         "90vh": "90vh",
-        "93vh": "93vh",
-        "95vh": "95vh",
-
       }
     },
   },

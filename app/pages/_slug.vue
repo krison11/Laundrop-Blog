@@ -121,44 +121,6 @@ export default class BlogPost extends Vue {
   params() {
     return this.$route.params.slug;
   }
-
-  getColor(color) {
-    switch (color) {
-      case "black":
-        return "text-black";
-        break;
-      case "white":
-        return "text-white";
-        break;
-      case "primary":
-        return "text-primary";
-        break;
-      case "secondary":
-        return "text-secondary";
-        break;
-      case "yellow":
-        return "text-ld-yellow";
-        break;
-      case "pink":
-        return "text-ld-pink";
-        break;
-    }
-    return color;
-  }
-  // post!: Post;
-  // async asyncData({ params, payload }): Promise<{ post: Post }> {
-  //   if (payload) {
-  //     return { post: payload };
-  //   }
-  //   try {
-  //     const post = require(`@/content/blog/${params.slug}.json`);
-  //     return {
-  //       post
-  //     };
-  //   } catch (e) {
-  //     throw new Error("Not found");
-  //   }
-  // }
 }
 </script>
 
