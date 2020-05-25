@@ -127,12 +127,12 @@ collections:
               - label: "Color"
                 name: "color" 
                 widget: "select"
-                default: "ld-pink"
+                default: "bg-ld-pink"
                 options:
-                  - { label: "Black", value: "black" }
-                  - { label: "Pink", value: "ld-pink" } 
-                  - { label: "Primary", value: "primary" } 
-                  - { label: "Secondary", value: "secondary" } 
+                  - { label: "Black", value: "bg-black" }
+                  - { label: "Pink", value: "bg-ld-pink" } 
+                  - { label: "Primary", value: "bg-primary" } 
+                  - { label: "Secondary", value: "bg-secondary" } 
                     
           - label: "Seo"
             name: "seo"
