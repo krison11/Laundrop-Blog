@@ -166,7 +166,7 @@ table {
   margin-left: -10px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .info-container {
     display: flex;
     flex-wrap: wrap;
@@ -195,7 +195,36 @@ table {
     margin-bottom: 10px;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .copyright {
+    justify-content: center;
+  }
+  table {
+    margin-left: 0px;
+  }
+  td {
+    padding: 0px 0px 10px 0px;
+  }
+  .info,
+  .contact {
+    width: 50%;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .email {
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
   .info-container {
     display: flex;
     flex-wrap: wrap;
