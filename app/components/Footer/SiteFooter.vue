@@ -14,7 +14,7 @@
 
       <div class="info-container px-2">
         <div class="info my-6">
-          <div>
+          <div class="-ml-1">
             <p class="mb-1">Östermalmsgatan 26A</p>
             <p>114 26 Stockholm</p>
           </div>
@@ -26,7 +26,7 @@
               rel="noopener noreferrer"
             >
               <svg
-                class="mr-2 -ml-1"
+                class="mr-2"
                 width="22"
                 height="22"
                 viewBox="0 0 24 25"
@@ -158,6 +158,9 @@ footer {
   border-top: 25px solid #134948;
   padding: 50px 20px 0px 20px;
   overflow: hidden;
+}
+.email {
+  margin-left: -6px;
 }
 td {
   padding: 8px;
