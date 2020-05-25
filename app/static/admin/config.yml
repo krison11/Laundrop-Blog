@@ -85,7 +85,7 @@ collections:
               - label: "Text Color"
                 name: "textColor"
                 widget: "select"
-                default: "secondary"
+                default: "text-secondary"
                 required: false
                 options:
                   - { label: "Black", value: "text-black" }
